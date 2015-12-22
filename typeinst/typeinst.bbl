@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{SDLWhitePaper}
+Microsoft, ``Microsoft security development adoption: Why and how,'' Septiembre
+  2013.
+
+\bibitem{SDLImplementacionSimplificada}
+Microsoft, ``Implementación simplificada del proceso sdl de microsoft,''
+  Febrero 2010.
+
+\bibitem{webAplicationSecurity}
+C.~S. Nuno~Teodoro, ``Web application security,'' Enero 2011.
+
+\bibitem{SDLSecurityDevelopmentLifecicle}
+Microsoft, ``Microsoft security development lifecicle,'' Junio 2015.
+
+\bibitem{BenchmarkingSDLCLAPS}
+O.~R. Ikram El~rhaffari, ``Benchmarking sdl and clasp lifecycle,'' Mayo 2014.
+
+\bibitem{CLASPIntroduction}
+OWASP, ``{CLASP} introduction.'' \url{https://www.owasp.org/index.php/CLASP}.
+\newblock Fecha de acceso: 25-11-2015.
+
+\bibitem{CLASPConcepts}
+OWASP, ``{CLASP} concepts.''
+  \url{https://www.owasp.org/index.php/CLASP_Concepts}.
+\newblock Fecha de acceso: 25-11-2015.
+
+\bibitem{AAViewCLAPS}
+OWASP, ``Clasp activity-assessment view,'' Marzo 2006.
+
+\bibitem{SAMMIntroduction}
+OWASP, ``{SAMM} introduction.''
+  \url{https://www.owasp.org/index.php/Category:Software_Assurance_Maturity_Model}.
+\newblock Fecha de acceso: 30-11-2015.
+
+\bibitem{OWASPIntroduction}
+OWASP, ``{OWASP} introduction.''
+  \url{https://www.owasp.org/index.php/Category:OWASP_Project}.
+\newblock Fecha de acceso: 30-11-2015.
+
+\bibitem{CbyCIntroduction}
+P.~Amey, ``{CbyC} cbyc.''
+  \url{https://buildsecurityin.us-cert.gov/articles/knowledge/sdlc-process/correctness-by-construction}.
+\newblock Fecha de acceso: 2-12-2015.
+
+\bibitem{CbyCBrito}
+C.~J.~B. Abundis, ``Metodologías para desarrollar software seguro,'' Diciembre
+  2013.
+
+\bibitem{CbyCComercialSystem}
+R.~C. Anthony~Hall, ``Correctness by construction:developing a commercial
+  secure system,'' Febrero 2002.
+
+\bibitem{CbyCPraxis}
+Praxis, ``{Praxis} the foremost international specialist in critical systems
+  engineering.'' \url{http://www.praxis-his.com/}.
+\newblock Fecha de acceso: 6-12-2015.
+
+\bibitem{CbyCHighIntegritySystems}
+Praxis, ``{Praxis} high integrity systems.''
+  \url{http://web.archive.org/web/20081114100215/http://www.praxis-his.com/services/software/approach.asp}.
+\newblock Fecha de acceso: 6-12-2015.
+
+\bibitem{SREPMellado}
+M.~P. Daniel~Mellado, Eduardo Fernandez-Medina, ``Applying a security
+  requirements engineering process,'' 2006.
+
+\bibitem{SREPMap}
+MAP, ``Metodología de análisis y gestión de riesgos de los sistemas de
+  información (magerit - v 2),'' 2005.
+
+\bibitem{SREPMellado2}
+M.~P. Daniel~Mellado, Eduardo Fernandez-Medina, ``A common criteria based
+  security requirements engineering process for the development of secure
+  information systems,'' 2007.
+
+\bibitem{CCIntroduction}
+C.~C. Org, ``Introduction and general model,'' 2012.
+
+\bibitem{CCStat}
+C.~C. Org, ``{Common Criteria} certified products list - statistics.''
+  \url{http://www.commoncriteriaportal.org/products/stats/}.
+\newblock Fecha de acceso: 20-12-2015.
+
+\bibitem{CoSMoIntroduction}
+P.~L. R. W. E.~W. Christine~Artelsmair, Wolfgang~Essmayr, ``Cosmo: An approach
+  towards conceptual security modeling,'' 2002.
+
+\end{thebibliography}
