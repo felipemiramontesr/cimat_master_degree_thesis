@@ -11,6 +11,15 @@
 \makenoidxglossaries
 
 %Terminos de glosario
+\newglossaryentry{Hash Functions}{name={Hash Functions},
+description={Una función de hash es una función que se puede utilizar para mapear los datos de tamaño arbitrario a los datos de tamaño fijo. Los valores devueltos por una función hash se llaman valores hash, códigos hash, sumas de hash, o simplemente hashes. Un uso es una estructura de datos llamada una tabla hash, ampliamente utilizado en los programas informáticos para la rápida búsqueda de datos}}
+
+\newglossaryentry{Identificador}{name={Identificador},
+description={Los identificadores son símbolos léxicos que nombran entidades}}
+
+\newglossaryentry{Password}{name={Password},
+description={es una cadena de caracteres utilizados para la autenticación del usuario para demostrar la aprobación de identidad o de acceso para obtener acceso a un recurso (ejemplo: un código de acceso es un tipo de contraseña que debe ser mantenida en secreto)}}
+
 \newglossaryentry{UMLSec}{name={UMLSec},
 description={es una extensión para el Lenguaje Unificado de Modelado (UML) para la integración de la información relacionada con la seguridad en las especificaciones UML}}
 
@@ -122,6 +131,12 @@ description={es la capacidad de hacer cambios en el producto que se está desarr
 \newacronym{ISO}{ISO}{International Organization for Standardization}
 \newacronym{CCEAL}{CCEAL}{Common Criteria Evaluation Assurance Levels}
 \newacronym{CoSMo}{CoSMo}{Conceptual Security Modeling}
+\newacronym{IS}{IS}{Information Systems}
+\newacronym{DAC}{DAC}{Discreationary Access Control}
+\newacronym{MAC}{MAC}{Mandatory Access Control}
+\newacronym{RBAC}{RBAC}{Role Based Access Control}
+\newacronym{OSI}{OSI}{Open Systems Interconnection Model}
+\newacronym{CA}{CA}{Certification Authority}
 
 
 %\newacronym{FOSS}{FOSS}{Free and Open Source Software}
@@ -1252,9 +1267,84 @@ Las deficiencias que \gls{SREP} posee considerando los puntos propuestos por Ikr
 
 
 \subsection{Modelado Conceptual de Seguridad}
-Conceptual Security Modeling  (CoSMo, Modelado Conceptual de Seguridad), propuesto por Christine Artelsmair, Wolfgang Essmayr, Peter Lang, Roland Wagner y Edgar Weippl, \gls{CoSMo} fue diseñado para reducir la brecha resultante del trato pobre de la seguridad durante la realización de los requisitos de seguridad de desarrollo de software, lamentablemente la importancia de la seguridad es subvaluada y considerada como una especie de complemento que será aplicado al sistema después del desarrollo \cite{CoSMoIntroduction}.
+Conceptual Security Modeling  (CoSMo, Modelado Conceptual de Seguridad), propuesto por Christine Artelsmair, Wolfgang Essmayr, Peter Lang, Roland Wagner y Edgar Weippl, \gls{CoSMo} fue diseñado para reducir la brecha resultante del trato pobre de la seguridad durante la realización de los requisitos de seguridad de desarrollo de software, segun \cite{CoSMoIntroduction} la importancia de la seguridad es subvaluada y considerada como una especie de complemento que será aplicado al sistema después del desarrollo.
 
 \subsubsection{¿Qué es \gls{CoSMo}?}
+Es un técnica de modelado que segun \cite{CoSMoIntroduction} esta constituida por requisitos y mecanismos de seguridad, cada requisito puede ser alcanzado por medio de uno o mas mecanismos de seguridad, esto resulta en una matriz requisitos/mecanismos, dichos requisitos y mecanismos deberan ser formulados como una abstraccion de alto nivel.\\
+
+A continuación se presentan los requisitos y mecanismos considerados por \cite{CoSMoIntroduction} como los mas importantes.
+
+\begin{enumerate}
+	\item Autenticidad, Autenticación e Identificacion.\\
+	
+	Segun \cite{CoSMoIntroduction} la Autenticación aborda el requisito de aseguramiento de Autenticidad, la Autenticación puede tomar varias formas.
+	
+	\begin{enumerate}
+		\item Autenticación general de la identidad / autenticación
+		\item Autenticación del contenido del mensaje  / autenticación
+		\item Autenticacion del origen del mensaje / autenticación\\
+	\end{enumerate}
+	
+En \cite{CoSMoIntroduction} se menciona que la Autenticación general de la identidad es comunmente consevida por medio de la insercion de un nombre de usuario (\gls{Identificador}) y una clave (\gls{Password}). La Autenticación del contenido del mensaje se refiere al proceso de verificacion de la información contenida en el mensaje que fue enviado. La Autenticación del origen del mensaje se refiere al proceso de verificación del emisor y el origen de un mensaje, esto es logrado por medio de el mecanismo de Autenticación del origen del mensaje incluyendo los conceptos de: firmas digitales, certificados digitales y confianza con terceros.\\
+
+	\item Integridad, Discreción y Privacidad.\\
+	
+De acuerdo con \cite{CoSMoIntroduction} existen dos tipos de restricciones que corresponden directamente a la Integridad y a la Discresción. En general, las restriciones de Integridad son reglas que administran la actulizacion de la informacion y la validación de los datos. Las restriciones de Discreción son reglas que administran la clasificacion de los datos y su acceso. Los dos tipos de restricciones se subdividen en subtipos: restricciones semanticas y restriciones de Control de Acceso.\\
+
+Segun \cite{CoSMoIntroduction} las restricciones de la Integridad semantica permiten definir y mantener el correcto estado de la información durante la operación. Las restricciones de la Integridad del Control de Acceso son declaraciones explicitas que pretenden notificar la Autorización para la modificación de ciertos datos con el fin de proteger las modificaciones maliciosas o accidentales. Las restriciones de la discrecion semantica especifican los niveles en los cuales los datos y su asociacion son clasificados. Las restricciones de la Discresion del Control de Acceso especifican cuales usuarios estan autorizados para accesar a ciertos datos.\\
+
+	\item Atorización, Control de Acceso y Disponibilidad.\\
+
+En \cite{CoSMoIntroduction} se mensiona que la Autorización es la especificación de un conjunto de reglas acerca de "¿Quien tiene?, ¿Cual tipo de acceso?, ¿A que información?". El Control de Acceso es logrado por medio de procesdimiento que controlan la Autorización  limitando el acceso a los datos solo a usuarios autorizados, el Control de Acceso usualmente requiere de la Autenticación como prerequisito. La Autorización y el Control de Acceso se vinculan con los requisitos de Discreción y Privavidad de los \gls{IS}.\\
+
+El control de acceso puede tomar control por medio de las siguentes formas:\\
+
+\begin{enumerate}
+	\item Control de Acceso discrecional.
+	\item Control de Acceso obligatorio.
+	\item Control de Acceso basado en roles.\\
+\end{enumerate}
+
+En \cite{CoSMoIntroduction} se dice que la Disponibilidad es el requisito de servir a los actores autorizados  con la información adecuada cuando esta sea requerida. Para lograr el aseguramiento de la Disponibilidad es necesario proteger la información de los actores no autorizados. Para mantener la información disponible es necesario controlar el acceso a los datos.\\  
+	
+	\item Rendicion de Cuentas, Auditoria y No Repudio.\\
+
+De acuerdo a \cite{CoSMoIntroduction} la Rendición de Cuentas captura el requisito realacionado a la responsabilidad que los individuos tinen sobre las actividades relavantes de reguridad y el cual puede ser alcanzado por medio del mecanismo de Auditoria. El No Repudio es un caso particular de Rendicion de Cuentas  y es un requisito que sera logrado por medio de metodos de \gls{Criptografia}. Al mecanismo encargado de llevar registro de todas las actividades relacionadas a la seguridad por un usuario es llamado Auditoria. La Auditoria esta formada por dos componentes: la recolección y organización de los datos asi como el analisis de los datos para descubrir vulnerabilidades.\\
+
+	\item Anonimato y Originalidad.\\
+	
+En \cite{CoSMoIntroduction} se define Anonimato a la carencia de identidad y se menciona que existen dos enfoques para proveer de Aninimato en la red:\\
+
+	\begin{enumerate}
+		\item Servicios anonimos: basados en un sistema de trasporte no anonimo (capa 1 a 4 en \gls{OSI}).
+		\item Redes anonimas: implementando la anonimidad en las capas bajas de \gls{OSI} y construyendo diferentes servicios sobre ella y con Anonimato hasta cierto punto (por ejemplo, anonimato real, pseudo-anonimato, auto-identificación opcional).\\
+	\end{enumerate}
+
+En este punto es necesario considerar a la infraestructura como un mecanismo mas, el cual jugara un papel muy importante para el desarrollo de nuevos sistemas seguros.\\
+
+	\item Validez.\\
+	
+En \cite{CoSMoIntroduction} se menciona que los contratos y firmas digitales poseen validez legal y que debe de ser considerarda cada una de las vulnerabilidades existentes de los metodos implementados. Para lograr alcanzar una correcta Validez en los \gls{IS} sera necesario considerar la integración de nuevas herramientas dentro de la infraestructura.\\
+
+	\item \gls{Criptografia} y Mecanismos Criptográficos.\\
+
+Segun \cite{CoSMoIntroduction} los Mecanismos Criptograficos mas frecuentes son:
+
+	\begin{enumerate}
+		\item Algoritmos de cifrado que protegen la Confidencialidad de los datos.
+		\item Firmas digitales que provee de iIntegridad y Autenticidad.
+		\item Funciones para la revision de la Integridad (\gls{Hash Functions}) usadas tipicamente en conección con firmas digitales.\\
+	\end{enumerate}
+
+	\item Certificados Digitales y Terceros Confiables.\\
+	
+En \cite{CoSMoIntroduction} se menciona que los Certificados Digitales son usados para proveer Autenticidad a los involucrados participantes en la comunicación, por ejemplo: la certificación de una llave publica provee la confianza de un individuo u organización. Una \gls{CA} actua como un Tercero Confiable que garantiza el enlace seguro entre los involucrados.
+
+	
+
+
+	
+\end{enumerate}
 
 \subsubsection{¿Porqué adoptar el \gls{CoSMo}?}
 
