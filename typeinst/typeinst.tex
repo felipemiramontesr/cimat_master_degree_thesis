@@ -1270,7 +1270,7 @@ Las deficiencias que \gls{SREP} posee considerando los puntos propuestos por Ikr
 Conceptual Security Modeling  (CoSMo, Modelado Conceptual de Seguridad), propuesto por Christine Artelsmair, Wolfgang Essmayr, Peter Lang, Roland Wagner y Edgar Weippl, \gls{CoSMo} fue diseñado para reducir la brecha resultante del trato pobre de la seguridad durante la realización de los requisitos de seguridad de desarrollo de software, segun \cite{CoSMoIntroduction} la importancia de la seguridad es subvaluada y considerada como una especie de complemento que será aplicado al sistema después del desarrollo.
 
 \subsubsection{¿Qué es \gls{CoSMo}?}
-Es un técnica de modelado que segun \cite{CoSMoIntroduction} esta constituida por requisitos y mecanismos de seguridad, cada requisito puede ser alcanzado por medio de uno o mas mecanismos de seguridad, esto resulta en una matriz requisitos/mecanismos, dichos requisitos y mecanismos deberan ser formulados como una abstraccion de alto nivel.\\
+Es un técnica de modelado conceptual, segun \cite{CoSMoIntroduction} esta constituida por requisitos y mecanismos de seguridad, cada requisito puede ser alcanzado por medio de uno o mas mecanismos de seguridad, esto resulta en una matriz requisitos/mecanismos, dichos requisitos y mecanismos deberan ser formulados como una abstraccion de alto nivel.\\
 
 A continuación se presentan los requisitos y mecanismos considerados por \cite{CoSMoIntroduction} como los mas importantes.
 
@@ -1313,11 +1313,11 @@ De acuerdo a \cite{CoSMoIntroduction} la Rendición de Cuentas captura el requis
 
 	\item Anonimato y Originalidad.\\
 	
-En \cite{CoSMoIntroduction} se define Anonimato a la carencia de identidad y se menciona que existen dos enfoques para proveer de Aninimato en la red:\\
+En \cite{CoSMoIntroduction} se define como Anonimato a la carencia de identidad y se menciona que existen dos enfoques para proveer de Aninimato en la red:\\
 
 	\begin{enumerate}
 		\item Servicios anonimos: basados en un sistema de trasporte no anonimo (capa 1 a 4 en \gls{OSI}).
-		\item Redes anonimas: implementando la anonimidad en las capas bajas de \gls{OSI} y construyendo diferentes servicios sobre ella y con Anonimato hasta cierto punto (por ejemplo, anonimato real, pseudo-anonimato, auto-identificación opcional).\\
+		\item Redes anonimas: implementando la anonimidad en las capas bajas de \gls{OSI} y construyendo diferentes servicios sobre ella con Anonimato hasta cierto punto (por ejemplo, anonimato real, pseudo-anonimato, auto-identificación opcional).\\
 	\end{enumerate}
 
 En este punto es necesario considerar a la infraestructura como un mecanismo mas, el cual jugara un papel muy importante para el desarrollo de nuevos sistemas seguros.\\
@@ -1328,7 +1328,7 @@ En \cite{CoSMoIntroduction} se menciona que los contratos y firmas digitales pos
 
 	\item \gls{Criptografia} y Mecanismos Criptográficos.\\
 
-Segun \cite{CoSMoIntroduction} los Mecanismos Criptograficos mas frecuentes son:
+Segun \cite{CoSMoIntroduction} los Mecanismos Criptograficos mas frecuentes son:\\
 
 	\begin{enumerate}
 		\item Algoritmos de cifrado que protegen la Confidencialidad de los datos.
@@ -1338,27 +1338,34 @@ Segun \cite{CoSMoIntroduction} los Mecanismos Criptograficos mas frecuentes son:
 
 	\item Certificados Digitales y Terceros Confiables.\\
 	
-En \cite{CoSMoIntroduction} se menciona que los Certificados Digitales son usados para proveer Autenticidad a los involucrados participantes en la comunicación, por ejemplo: la certificación de una llave publica provee la confianza de un individuo u organización. Una \gls{CA} actua como un Tercero Confiable que garantiza el enlace seguro entre los involucrados.
+En \cite{CoSMoIntroduction} se menciona que los Certificados Digitales son usados para proveer Autenticidad a los involucradosen la comunicación, por ejemplo: la certificación de una llave publica provee la confianza de un individuo u organización. Una \gls{CA} actua como un Tercero Confiable que garantiza el enlace seguro entre los involucrados.
 
-	
-
-
-	
 \end{enumerate}
 
 \subsubsection{¿Porqué adoptar el \gls{CoSMo}?}
+El cometido principal de \gls{CoSMo} es solucionar la falta de una técnica de modelado conceptual apropiado para la seguridad, \cite{CoSMoIntroduction} identifica la necesidad de integrar ciertas consideraciones de seguridad dentro del proceso de modelado de \gls{Software} y realiza una contribucion doble, \cite{CoSMoIntroduction} menciona en primer lugar que el modelado conceptual abarca los requisitos y mecanismos de seguridad de alto nivel y como es que las consideraciones de seguridad se pueden integrar en el proceso de modelado conceptual mejorando el proceso de manera radical, en segundo lugar menciona que los requisitos frecuentes de seguridad  que claramente indican cuales mecanismos son utilizados para lograr su propio cumplimiento deben ser sistemáticamente archivados, mejorando asi el consumo de recursos como tiempo de investigación y desarrollo. 
 
 \subsubsection{¿Cómo adoptar el \gls{CoSMo}?}
+En \cite{CoSMoIntroduction} se menciona que al adoptar el \gls{CoSMo} es necesario el uso de herramietas tales como \gls{UML} ya que permiten el modelado de requisitos de seguridad a nivel conceptual por medio de  diagramas de casos de uso, \cite{CoSMoIntroduction} menciona que UML es fácil, comprensible y ayuda a construir un entendimiento común de un nuevo sistema, debido a esto se debera poseer un conocimiento adecuado para la construcion de diagramas de calidad. Es importante tener en cuenta que sólo exigen requisitos de seguridad y que no existe mecanismo alguno que especifique cómo lograr dichos requisitos. Segun \cite{CoSMoIntroduction} los diagramas de casos de uso pueden ser enriquecidos a nivel conceptual por medio de los requisitos descritos con anterioridad en la sección ¿Qué es \gls{CoSMo}?.
 
 \subsubsection{¿Cómo evaluar el impacto del \gls{CoSMo}?}
+\gls{CoSMo} no posee un metodo definido para su evaluación, sin embargo es posible inferir la posibilidad de evaluar la completitud de requisitos de seguridad por medio de la caparativa entre los requisitos necesarios para el sistema y aquellos logrados.
 
 \subsubsection{¿Quiénes deben poner en practica el \gls{CoSMo}?}
+\cite{CoSMoIntroduction} menciona que las organizacines que deben utilizar el \gls{CoSMo} son aquellas enfocadas en desarrollar sistemas ligados a las siguientes categorias entre otros:\\
+
+\begin{enumerate}
+	\item Sistemas y dispositivos de control de acceso.
+	\item Sistemas y dispositivos confiables.
+	\item Sistemas y dispositivos biometricos.
+	\item Sistemas y dispositivos de comercio electronico.
+	\item Sistemas y dispositivos bancarios.
+\end{enumerate}
 
 \subsubsection{¿Cuáles son los beneficios que ofrece el \gls{CoSMo}?}
 
 \subsubsection{¿Cuáles son las deficiencias que presenta el \gls{CoSMo}?}
 
-\subsubsection{¿Cuáles son las deficiencias que presenta el \gls{CoSMo}?}
 
 
 \subsection{Lenguaje Unificado de Modelado Afín a la seguridad}
