@@ -12,7 +12,7 @@ Microsoft, ``Implementación simplificada del proceso sdl de microsoft,''
 C.~S. Nuno~Teodoro, ``Web application security,'' Enero 2011.
 
 \bibitem{SDLSecurityDevelopmentLifecicle}
-Microsoft, ``Microsoft security development lifecicle,'' Junio 2015.
+S.~L. Michael~Howard, ``Microsoft security development lifecicle,'' Junio 2015.
 
 \bibitem{BenchmarkingSDLCLAPS}
 O.~R. Ikram El~rhaffari, ``Benchmarking sdl and clasp lifecycle,'' Mayo 2014.
@@ -49,8 +49,8 @@ C.~J.~B. Abundis, ``Metodologías para desarrollar software seguro,'' Diciembre
   2013.
 
 \bibitem{CbyCComercialSystem}
-R.~C. Anthony~Hall, ``Correctness by construction:developing a commercial
-  secure system,'' Febrero 2002.
+R.~C. Anthony~Hall, ``Correctness by construction: Bettercan also be cheaper,''
+  Febrero 2002.
 
 \bibitem{CbyCPraxis}
 Praxis, ``{Praxis} the foremost international specialist in critical systems
