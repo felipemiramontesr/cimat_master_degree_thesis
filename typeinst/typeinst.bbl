@@ -87,4 +87,15 @@ C.~C. Org, ``{Common Criteria} certified products list - statistics.''
 P.~L. R. W. E.~W. Christine~Artelsmair, Wolfgang~Essmayr, ``Cosmo: An approach
   towards conceptual security modeling,'' 2002.
 
+\bibitem{OMGAbout}
+O.~M. Group, ``{OMG} about omg.''
+  \url{http://www.omg.org/gettingstarted/gettingstartedindex.htm}.
+\newblock Fecha de acceso: 2-1-2016.
+
+\bibitem{SSDUML}
+J.~Jürjens, {\em Secure Systems Development with UML}.
+\newblock Dep. of Informatics, Software and Systems Engineering, Technische
+  Universität München, Boltzmannstr. 3, 85748 München/Garching: Springer,
+  1st~ed., 2004.
+
 \end{thebibliography}

@@ -3,22 +3,28 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: typeinst.aux
 The style file: ieeetr.bst
 Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 21 of file bibliography.bib
+ :  address   = "
+ :               140 Kendrick Street, Needham, MA 02494, U.S.A",
+I'm skipping whatever remains of this entry
 Warning--I'm ignoring CLASPIntroduction's extra "title" field
---line 91 of file bibliography.bib
+--line 114 of file bibliography.bib
 Warning--I'm ignoring CLASPConcepts's extra "title" field
---line 99 of file bibliography.bib
+--line 122 of file bibliography.bib
 Warning--I'm ignoring SAMMIntroduction's extra "title" field
---line 115 of file bibliography.bib
+--line 138 of file bibliography.bib
 Warning--I'm ignoring OWASPIntroduction's extra "title" field
---line 123 of file bibliography.bib
+--line 146 of file bibliography.bib
 Warning--I'm ignoring CbyCIntroduction's extra "title" field
---line 131 of file bibliography.bib
+--line 154 of file bibliography.bib
 Warning--I'm ignoring CbyCHighIntegritySystems's extra "title" field
---line 139 of file bibliography.bib
+--line 162 of file bibliography.bib
 Warning--I'm ignoring CbyCPraxis's extra "title" field
---line 147 of file bibliography.bib
+--line 170 of file bibliography.bib
 Warning--I'm ignoring CCStat's extra "title" field
---line 155 of file bibliography.bib
+--line 178 of file bibliography.bib
+Warning--I'm ignoring OMGAbout's extra "title" field
+--line 186 of file bibliography.bib
 Warning--empty journal in SDLWhitePaper
 Warning--empty journal in SDLImplementacionSimplificada
 Warning--empty journal in webAplicationSecurity
@@ -36,45 +42,45 @@ while executing---line 969 of file ieeetr.bst
 Too many commas in name 1 of "Christine Artelsmair, Wolfgang Essmayr, Peter Lang, Roland Wagner, Edgar Weippl" for entry CoSMoIntroduction
 while executing---line 969 of file ieeetr.bst
 Warning--empty journal in CoSMoIntroduction
-You've used 21 entries,
+You've used 23 entries,
             1876 wiz_defined-function locations,
-            590 strings with 6339 characters,
-and the built_in function-call counts, 2746 in all, are:
-= -- 234
-> -- 84
+            605 strings with 6693 characters,
+and the built_in function-call counts, 3031 in all, are:
+= -- 262
+> -- 92
 < -- 0
-+ -- 42
-- -- 21
-* -- 141
-:= -- 438
-add.period$ -- 29
-call.type$ -- 21
-change.case$ -- 21
++ -- 46
+- -- 23
+* -- 153
+:= -- 479
+add.period$ -- 33
+call.type$ -- 23
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 141
-empty$ -- 350
-format.name$ -- 21
-if$ -- 647
+cite$ -- 36
+duplicate$ -- 154
+empty$ -- 388
+format.name$ -- 23
+if$ -- 720
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 13
-newline$ -- 74
-num.names$ -- 21
-pop$ -- 126
+int.to.str$ -- 23
+missing$ -- 15
+newline$ -- 82
+num.names$ -- 23
+pop$ -- 138
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 44
+skip$ -- 48
 stack$ -- 0
 substring$ -- 0
-swap$ -- 0
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 21
-width$ -- 23
-write$ -- 165
-(There were 2 error messages)
+while$ -- 23
+width$ -- 25
+write$ -- 184
+(There were 3 error messages)
