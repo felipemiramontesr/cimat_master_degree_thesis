@@ -8,23 +8,23 @@ I was expecting a `,' or a `}'---line 21 of file bibliography.bib
  :               140 Kendrick Street, Needham, MA 02494, U.S.A",
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring CLASPIntroduction's extra "title" field
---line 114 of file bibliography.bib
+--line 120 of file bibliography.bib
 Warning--I'm ignoring CLASPConcepts's extra "title" field
---line 122 of file bibliography.bib
+--line 128 of file bibliography.bib
 Warning--I'm ignoring SAMMIntroduction's extra "title" field
---line 138 of file bibliography.bib
+--line 144 of file bibliography.bib
 Warning--I'm ignoring OWASPIntroduction's extra "title" field
---line 146 of file bibliography.bib
+--line 152 of file bibliography.bib
 Warning--I'm ignoring CbyCIntroduction's extra "title" field
---line 154 of file bibliography.bib
+--line 160 of file bibliography.bib
 Warning--I'm ignoring CbyCHighIntegritySystems's extra "title" field
---line 162 of file bibliography.bib
+--line 168 of file bibliography.bib
 Warning--I'm ignoring CbyCPraxis's extra "title" field
---line 170 of file bibliography.bib
+--line 176 of file bibliography.bib
 Warning--I'm ignoring CCStat's extra "title" field
---line 178 of file bibliography.bib
+--line 184 of file bibliography.bib
 Warning--I'm ignoring OMGAbout's extra "title" field
---line 186 of file bibliography.bib
+--line 192 of file bibliography.bib
 Warning--empty journal in SDLWhitePaper
 Warning--empty journal in SDLImplementacionSimplificada
 Warning--empty journal in webAplicationSecurity
@@ -42,36 +42,37 @@ while executing---line 969 of file ieeetr.bst
 Too many commas in name 1 of "Christine Artelsmair, Wolfgang Essmayr, Peter Lang, Roland Wagner, Edgar Weippl" for entry CoSMoIntroduction
 while executing---line 969 of file ieeetr.bst
 Warning--empty journal in CoSMoIntroduction
-You've used 23 entries,
+Warning--empty journal in UMLsecExtending
+You've used 24 entries,
             1876 wiz_defined-function locations,
-            605 strings with 6693 characters,
-and the built_in function-call counts, 3031 in all, are:
-= -- 262
-> -- 92
+            608 strings with 6775 characters,
+and the built_in function-call counts, 3161 in all, are:
+= -- 272
+> -- 96
 < -- 0
-+ -- 46
-- -- 23
-* -- 153
-:= -- 479
-add.period$ -- 33
-call.type$ -- 23
-change.case$ -- 23
++ -- 48
+- -- 24
+* -- 160
+:= -- 500
+add.period$ -- 34
+call.type$ -- 24
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 154
-empty$ -- 388
-format.name$ -- 23
-if$ -- 720
+cite$ -- 38
+duplicate$ -- 163
+empty$ -- 405
+format.name$ -- 24
+if$ -- 750
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 15
-newline$ -- 82
-num.names$ -- 23
-pop$ -- 138
+int.to.str$ -- 24
+missing$ -- 16
+newline$ -- 85
+num.names$ -- 24
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 48
+skip$ -- 49
 stack$ -- 0
 substring$ -- 0
 swap$ -- 1
@@ -79,8 +80,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 13
-while$ -- 23
-width$ -- 25
-write$ -- 184
+warning$ -- 14
+while$ -- 24
+width$ -- 26
+write$ -- 191
 (There were 3 error messages)

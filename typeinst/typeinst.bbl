@@ -92,6 +92,9 @@ O.~M. Group, ``{OMG} about omg.''
   \url{http://www.omg.org/gettingstarted/gettingstartedindex.htm}.
 \newblock Fecha de acceso: 2-1-2016.
 
+\bibitem{UMLsecExtending}
+J.~Jürjens, ``Umlsec: Extending uml for secure systems development,'' 2002.
+
 \bibitem{SSDUML}
 J.~Jürjens, {\em Secure Systems Development with UML}.
 \newblock Dep. of Informatics, Software and Systems Engineering, Technische

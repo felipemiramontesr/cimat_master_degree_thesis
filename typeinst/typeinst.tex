@@ -11,6 +11,9 @@
 \makenoidxglossaries
 
 %Terminos de glosario
+\newglossaryentry{Smart Cards}{name={Smart Cards},
+description={es una tarjeta pequeña con circuitos integrados embebidos, están hechas generalmente de cloruro de polivinilo de plástico, pero a veces de poliésteres basados en tereftalato de polietileno, estireno acrilonitrilo butadieno o policarbonato, pueden proporcionar identificación personal, autenticación, almacenamiento de datos y procesamiento de solicitudes así como proporcionar autenticación de seguridad para el inicio de sesión único (SSO) dentro de las grandes organizaciones}}
+
 \newglossaryentry{Hash Functions}{name={Hash Functions},
 description={Una función de hash es una función que se puede utilizar para mapear los datos de tamaño arbitrario a los datos de tamaño fijo. Los valores devueltos por una función hash se llaman valores hash, códigos hash, sumas de hash, o simplemente hashes. Un uso es una estructura de datos llamada una tabla hash, ampliamente utilizado en los programas informáticos para la rápida búsqueda de datos}}
 
@@ -20,7 +23,7 @@ description={Los identificadores son símbolos léxicos que nombran entidades}}
 \newglossaryentry{Password}{name={Password},
 description={es una cadena de caracteres utilizados para la autenticación del usuario para demostrar la aprobación de identidad o de acceso para obtener acceso a un recurso (ejemplo: un código de acceso es un tipo de contraseña que debe ser mantenida en secreto)}}
 
-\newglossaryentry{UMLSec}{name={UMLSec},
+\newglossaryentry{UMLsec}{name={UMLsec},
 description={es una extensión para el Lenguaje Unificado de Modelado (UML) para la integración de la información relacionada con la seguridad en las especificaciones UML}}
 
 \newglossaryentry{CC}{name={Common Criteria},
@@ -80,10 +83,14 @@ description={es software o hardware que ayuda a evitar que los hackers y algunos
 description={es un sistema desarrollado por Microsoft para pensar acerca de las amenazas de seguridad informática. Proporciona una regla mnemotécnica para amenazas de seguridad en seis categorías: Spoofing of user identity, Tampering, Repudiation, Information disclosure (privacy breach or data leak), Denial of service (D.o.S), Elevation of privilege}}
 
 \newglossaryentry{UNIX}{name={UNIX},
-description={es un sistema operativo portable, multitarea y multiusuario desarrollado, en principio, en 1969, por un grupo de empleados de los laboratorios Bell de AT\&T, entre los que figuran Dennis Ritchie, Ken Thompson y Douglas McIlroy.}}
+description={es un sistema operativo portable, multitarea y multiusuario desarrollado, en principio, en 1969, por un grupo de empleados de los laboratorios Bell de AT\&T, entre los que figuran Dennis Ritchie, Ken Thompson y Douglas McIlroy}}
 
 \newglossaryentry{Flexible}{name={Flexible},
-description={es la capacidad de hacer cambios en el producto que se está desarrollando, o en la forma en que se desarrolla, hasta relativamente tarde en el desarrollo, sin ser demasiado perturbador. En consecuencia, la posterior puede hacer cambios, entre más flexible es el proceso menos perjudicial es.}}
+description={es la capacidad de hacer cambios en el producto que se está desarrollando, o en la forma en que se desarrolla, hasta relativamente tarde en el desarrollo, sin ser demasiado perturbador. En consecuencia, la posterior puede hacer cambios, entre más flexible es el proceso menos perjudicial es}}
+
+\newglossaryentry{Tamper-Resistant-Hardware}{name={Tamper-Resistant-Hardware},
+description={son dispositivos resistentes a las manipulaciones  y no permiten ciertas ser extraídos fuera del hardware. Esto puede proporcionar una garantía muy fuerte ya que no pueden ser objeto de abuso: la única manera para manipularlos es poseer físicamente el dispositivo en particular}}
+
 %Fin de glosario
 
 %Acronimos
@@ -141,7 +148,8 @@ description={es la capacidad de hacer cambios en el producto que se está desarr
 \newacronym{TI}{TI}{Tecnologías de la Información}
 \newacronym{OMG}{OMG}{Object Management Group}
 \newacronym{MDA}{MDA}{Model Driven Architecture}
-
+\newacronym{RFPs}{RFPs}{Requests of Proposals}
+\newacronym{CORBA}{CORBA}{Common Object Request Broker Architecture}
 
 
 
@@ -1164,7 +1172,7 @@ se cumplen \cite{SREPMellado}.\\
 \gls{SREP} tiene como meta principal facilitar la reutilización de recursos, el proposito del desarrollo  con el reuso de requisitos es identificar las descripciones de los sistemas que se podrían utilizar (total o parcialmente) con un número mínimo de modificaciones, reduciendo de este modo el esfuerzo total de desarrollo. La reutilización de requisitos de seguridad ayuda a aumentar la calidad: la inconsistencia, los errores, la ambigüedad y otros problemas pueden ser detectados y corregidos para una mejor utilización en proyectos posteriores. De esta manera, se garantiza la puesta en marcha de posibles ciclos de desarrollo rapidos basados en soluciones probadas \cite{SREPMellado2}.
 
 \subsubsection{¿Cómo adoptar \gls{SREP}?}
-\gls{SREP} describe detalladamente como integrar el \gls{CC} en el \gls{CVDS} en conjunto con el \gls{SRR} para promover el reuso de requisitos de seguridad que deberan ser modeloados por medio de las herramientas propuestas por \gls{UMLSec}, \gls{SREP} promueve la utilización de las etapas propuestas por \gls{UP}, debido a esto es necesario que los equipos de desarrollo conozcan el funcionamiento de las herramientas externas utilizadas por \gls{SREP} \cite{SREPMellado2}. 
+\gls{SREP} describe detalladamente como integrar el \gls{CC} en el \gls{CVDS} en conjunto con el \gls{SRR} para promover el reuso de requisitos de seguridad que deberan ser modeloados por medio de las herramientas propuestas por \gls{UMLsec}, \gls{SREP} promueve la utilización de las etapas propuestas por \gls{UP}, debido a esto es necesario que los equipos de desarrollo conozcan el funcionamiento de las herramientas externas utilizadas por \gls{SREP} \cite{SREPMellado2}. 
 
 \subsubsection{¿Cómo evaluar el impacto de \gls{SREP}?}
 Para lograr la correcta evaluación del impacto generado debido a la adopcion de \gls{SREP} es necesario recurir a las actividades propuestas por el \gls{CC} en su seccion numero 3, en dicha seccion se definen los criterios de evaluación de \gls{PP} y \gls{ST}, ademas se presentan los niveles de evaluación que deben ser utililzados, dicho niveles estan basados en una escala predefinida de calificacion y son llamados \gls{EAL} los cuales definen una escala para medir el aseguramiento de los componentes \gls{TOE} \cite{CCIntroduction}.\\
@@ -1296,13 +1304,13 @@ En \cite{CoSMoIntroduction} se menciona que la Autenticación general de la iden
 
 	\item Integridad, Discreción y Privacidad.\\
 	
-De acuerdo con \cite{CoSMoIntroduction} existen dos tipos de restricciones que corresponden directamente a la Integridad y a la Discresción. En general, las restriciones de Integridad son reglas que administran la actulizacion de la informacion y la validación de los datos. Las restriciones de Discreción son reglas que administran la clasificacion de los datos y su acceso. Los dos tipos de restricciones se subdividen en subtipos: restricciones semanticas y restriciones de Control de Acceso.\\
+De acuerdo con \cite{CoSMoIntroduction} existen dos tipos de restricciones que corresponden directamente a la Integridad y a la Discreción. En general, las restricciones de Integridad son reglas que administran la actualización de la información y la validación de los datos. Las restricciones de Discreción son reglas que administran la clasificación de los datos y su acceso. Los dos tipos de restricciones se subdividen en subtipos: restricciones semánticas y restricciones de Control de Acceso.\\
 
-Segun \cite{CoSMoIntroduction} las restricciones de la Integridad semantica permiten definir y mantener el correcto estado de la información durante la operación. Las restricciones de la Integridad del Control de Acceso son declaraciones explicitas que pretenden notificar la Autorización para la modificación de ciertos datos con el fin de proteger las modificaciones maliciosas o accidentales. Las restriciones de la discrecion semantica especifican los niveles en los cuales los datos y su asociacion son clasificados. Las restricciones de la Discresion del Control de Acceso especifican cuales usuarios estan autorizados para accesar a ciertos datos.\\
+Según \cite{CoSMoIntroduction} las restricciones de la Integridad semántica permiten definir y mantener el correcto estado de la información durante la operación. Las restricciones de la Integridad del Control de Acceso son declaraciones explicitas que pretenden notificar la Autorización para la modificación de ciertos datos con el fin de proteger las modificaciones maliciosas o accidentales. Las restricciones de la discreción semántica especifican los niveles en los cuales los datos y su asociación son clasificados. Las restricciones de la Discreción del Control de Acceso especifican cuales usuarios están autorizados para accesar a ciertos datos.\\
 
 	\item Atorización, Control de Acceso y Disponibilidad.\\
 
-En \cite{CoSMoIntroduction} se mensiona que la Autorización es la especificación de un conjunto de reglas acerca de "¿Quien tiene?, ¿Cual tipo de acceso?, ¿A que información?". El Control de Acceso es logrado por medio de procesdimiento que controlan la Autorización  limitando el acceso a los datos solo a usuarios autorizados, el Control de Acceso usualmente requiere de la Autenticación como prerequisito. La Autorización y el Control de Acceso se vinculan con los requisitos de Discreción y Privavidad de los \gls{IS}.\\
+En \cite{CoSMoIntroduction} se menciona que la Autorización es la especificación de un conjunto de reglas acerca de "¿Quién tiene?, ¿Cúal tipo de acceso?, ¿A qué información?". El Control de Acceso es logrado por medio de procedimientos que controlan la Autorización  limitando el acceso a los datos solo a usuarios autorizados, el Control de Acceso usualmente requiere de la Autenticación como prerequisito. La Autorización y el Control de Acceso se vinculan con los requisitos de Discreción y Privacidad de los \gls{IS}.\\
 
 El control de acceso puede tomar control por medio de las siguentes formas:\\
 
@@ -1316,68 +1324,68 @@ En \cite{CoSMoIntroduction} se dice que la Disponibilidad es el requisito de ser
 	
 	\item Rendicion de Cuentas, Auditoria y No Repudio.\\
 
-De acuerdo a \cite{CoSMoIntroduction} la Rendición de Cuentas captura el requisito realacionado a la responsabilidad que los individuos tinen sobre las actividades relavantes de reguridad y el cual puede ser alcanzado por medio del mecanismo de Auditoria. El No Repudio es un caso particular de Rendicion de Cuentas  y es un requisito que sera logrado por medio de metodos de \gls{Criptografia}. Al mecanismo encargado de llevar registro de todas las actividades relacionadas a la seguridad por un usuario es llamado Auditoria. La Auditoria esta formada por dos componentes: la recolección y organización de los datos asi como el analisis de los datos para descubrir vulnerabilidades.\\
+De acuerdo a \cite{CoSMoIntroduction} la Rendición de Cuentas captura el requisito relacionado a la responsabilidad que los individuos tienen sobre las actividades relevantes de seguridad y el cual puede ser alcanzado por medio del mecanismo de Auditoria. El No Repudio es un caso particular de Rendición de Cuentas  y es un requisito que sera logrado por medio de métodos de \gls{Criptografia}. Al mecanismo encargado de llevar registro de todas las actividades relacionadas a la seguridad por un usuario es llamado Auditoria. La Auditoria esta formada por dos componentes: la recolección y organización de los datos así como el análisis de los datos para descubrir vulnerabilidades.\\
 
 	\item Anonimato y Originalidad.\\
 	
-En \cite{CoSMoIntroduction} se define como Anonimato a la carencia de identidad y se menciona que existen dos enfoques para proveer de Aninimato en la red:\\
+En \cite{CoSMoIntroduction} se define como Anonimato a la carencia de identidad y se menciona que existen dos enfoques para proveer de Anonimato en la red:\\
 
 	\begin{enumerate}
-		\item Servicios anonimos: basados en un sistema de trasporte no anonimo (capa 1 a 4 en \gls{OSI}).
-		\item Redes anonimas: implementando la anonimidad en las capas bajas de \gls{OSI} y construyendo diferentes servicios sobre ella con Anonimato hasta cierto punto (por ejemplo, anonimato real, pseudo-anonimato, auto-identificación opcional).\\
+		\item Servicios anónimos: basados en un sistema de trasporte no anónimo (capa 1 a 4 en \gls{OSI}).
+		\item Redes anónimas: implementando la anonimidad en las capas bajas de \gls{OSI} y construyendo diferentes servicios sobre ella con Anonimato hasta cierto punto (por ejemplo, anonimato real, pseudo-anonimato, auto-identificación opcional).\\
 	\end{enumerate}
 
 En este punto es necesario considerar a la infraestructura como un mecanismo mas, el cual jugara un papel muy importante para el desarrollo de nuevos sistemas seguros.\\
 
 	\item Validez.\\
 	
-En \cite{CoSMoIntroduction} se menciona que los contratos y firmas digitales poseen validez legal y que debe de ser considerarda cada una de las vulnerabilidades existentes de los metodos implementados. Para lograr alcanzar una correcta Validez en los \gls{IS} sera necesario considerar la integración de nuevas herramientas dentro de la infraestructura.\\
+En \cite{CoSMoIntroduction} se menciona que los contratos y firmas digitales poseen validez legal y que debe de ser considerada cada una de las vulnerabilidades existentes de los métodos implementados. Para lograr alcanzar una correcta Validez en los \gls{IS} sera necesario considerar la integración de nuevas herramientas dentro de la infraestructura.\\
 
 	\item \gls{Criptografia} y Mecanismos Criptográficos.\\
 
-Segun \cite{CoSMoIntroduction} los Mecanismos Criptograficos mas frecuentes son:\\
+Segun \cite{CoSMoIntroduction} los Mecanismos Criptográficos mas frecuentes son:\\
 
 	\begin{enumerate}
 		\item Algoritmos de cifrado que protegen la Confidencialidad de los datos.
-		\item Firmas digitales que provee de iIntegridad y Autenticidad.
-		\item Funciones para la revision de la Integridad (\gls{Hash Functions}) usadas tipicamente en conección con firmas digitales.\\
+		\item Firmas digitales que provee de integridad y Autenticidad.
+		\item Funciones para la revisión de la Integridad (\gls{Hash Functions}) usadas en conexión con firmas digitales.\\
 	\end{enumerate}
 
 	\item Certificados Digitales y Terceros Confiables.\\
 	
-En \cite{CoSMoIntroduction} se menciona que los Certificados Digitales son usados para proveer Autenticidad a los involucradosen la comunicación, por ejemplo: la certificación de una llave publica provee la confianza de un individuo u organización. Una \gls{CA} actua como un Tercero Confiable que garantiza el enlace seguro entre los involucrados.
+En \cite{CoSMoIntroduction} se menciona que los Certificados Digitales son usados para proveer Autenticidad a los involucrados en la comunicación, por ejemplo: la certificación de una llave publica provee la confianza de un individuo u organización. Una \gls{CA} actúa como un Tercero Confiable que garantiza el enlace seguro entre los involucrados.
 
 \end{enumerate}
 
 \subsubsection{¿Porqué adoptar el \gls{CoSMo}?}
-El cometido principal de \gls{CoSMo} es solucionar la falta de una técnica de modelado conceptual apropiado para la seguridad, \cite{CoSMoIntroduction} identifica la necesidad de integrar ciertas consideraciones de seguridad dentro del proceso de modelado de \gls{Software} y realiza una contribucion doble, \cite{CoSMoIntroduction} menciona en primer lugar que el modelado conceptual abarca los requisitos y mecanismos de seguridad de alto nivel y como es que las consideraciones de seguridad se pueden integrar en el proceso de modelado conceptual mejorando el proceso de manera radical, en segundo lugar menciona que los requisitos frecuentes de seguridad  que claramente indican cuales mecanismos son utilizados para lograr su propio cumplimiento deben ser sistemáticamente archivados, mejorando asi el consumo de recursos como tiempo de investigación y desarrollo. 
+El cometido principal de \gls{CoSMo} es solucionar la falta de una técnica de modelado conceptual apropiado para la seguridad, \cite{CoSMoIntroduction} identifica la necesidad de integrar ciertas consideraciones de seguridad dentro del proceso de modelado de \gls{Software} y realiza una contribución doble, \cite{CoSMoIntroduction} menciona en primer lugar que el modelado conceptual abarca los requisitos y mecanismos de seguridad de alto nivel y como es que las consideraciones de seguridad se pueden integrar en el proceso de modelado conceptual mejorando el proceso de manera radical, en segundo lugar menciona que los requisitos frecuentes de seguridad  que claramente indican cuales mecanismos son utilizados para lograr su propio cumplimiento deben ser sistemáticamente archivados, mejorando así el consumo de recursos como tiempo de investigación y desarrollo. 
 
 \subsubsection{¿Cómo adoptar el \gls{CoSMo}?}
-En \cite{CoSMoIntroduction} se menciona que al adoptar el \gls{CoSMo} es necesario el uso de herramietas tales como \gls{UML} ya que permiten el modelado de requisitos de seguridad a nivel conceptual por medio de  diagramas de casos de uso, \cite{CoSMoIntroduction} menciona que UML es fácil, comprensible y ayuda a construir un entendimiento común de un nuevo sistema, debido a esto se debera poseer un conocimiento adecuado para la construcion de diagramas de calidad. Es importante tener en cuenta que sólo exigen requisitos de seguridad y que no existe mecanismo alguno que especifique cómo lograr dichos requisitos. Segun \cite{CoSMoIntroduction} los diagramas de casos de uso pueden ser enriquecidos a nivel conceptual por medio de los requisitos descritos con anterioridad en la sección ¿Qué es \gls{CoSMo}?.
+En \cite{CoSMoIntroduction} se menciona que al adoptar el \gls{CoSMo} es necesario el uso de herramietas tales como \gls{UML} ya que permiten el modelado de requisitos de seguridad a nivel conceptual por medio de  diagramas de casos de uso, \cite{CoSMoIntroduction} menciona que \gls{UML} es fácil, comprensible y ayuda a construir un entendimiento común de un nuevo sistema, debido a esto se deberá poseer un conocimiento adecuado para la construcción de diagramas de calidad. Es importante tener en cuenta que sólo exigen requisitos de seguridad y que no existe mecanismo alguno que especifique cómo lograr dichos requisitos. Segun \cite{CoSMoIntroduction} los diagramas de casos de uso pueden ser enriquecidos a nivel conceptual por medio de los requisitos descritos con anterioridad en la sección ¿Qué es \gls{CoSMo}?.
 
 \subsubsection{¿Cómo evaluar el impacto del \gls{CoSMo}?}
-\gls{CoSMo} no posee un metodo definido para su evaluación, sin embargo es posible inferir la posibilidad de evaluar la completitud de requisitos de seguridad por medio de la caparativa entre los requisitos necesarios para el sistema y aquellos logrados.
+\gls{CoSMo} no posee un método definido para su evaluación, sin embargo es posible inferir la posibilidad de evaluar la completitud de requisitos de seguridad por medio de la comparativa entre los requisitos necesarios para el sistema y aquellos logrados.
 
 \subsubsection{¿Quiénes deben poner en practica el \gls{CoSMo}?}
-\cite{CoSMoIntroduction} menciona que las organizacines que deben utilizar el \gls{CoSMo} son aquellas enfocadas en desarrollar sistemas ligados a las siguientes categorias entre otros:\\
+\cite{CoSMoIntroduction} menciona que las organizaciones que deben utilizar el \gls{CoSMo} son aquellas enfocadas en desarrollar sistemas ligados a las siguientes categorías entre otros:\\
 
 \begin{enumerate}
 	\item Sistemas y dispositivos de control de acceso.
 	\item Sistemas y dispositivos confiables.
-	\item Sistemas y dispositivos biometricos.
-	\item Sistemas y dispositivos de comercio electronico.
+	\item Sistemas y dispositivos biométricos.
+	\item Sistemas y dispositivos de comercio electrónico.
 	\item Sistemas y dispositivos bancarios.
 \end{enumerate}
 
 \subsubsection{¿Cuáles son los beneficios que ofrece el \gls{CoSMo}?}
-Las cualidades que \gls{CoSMo} posee considerando los puntos propuestos por Ikram El rhaffari y Ounsa Roudies en su estudio y el cual esta enfocado en el análisis de elementos pertenecientes a la Ingeniería de \gls{Software}, a la \gls{SI} y a las \gls{TI} y son listadas a continuación.  
+Los beneficios que \gls{CoSMo} posee considerando los puntos propuestos por \cite{BenchmarkingSDLCLAPS} en su estudio y el cual esta enfocado en el análisis de elementos pertenecientes a la Ingeniería de \gls{Software}, a la \gls{SI} y a las \gls{TI} y son listadas a continuación.
 
 \begin{enumerate}
 	\item Cualidades relacionadas a la Ingeniería de \gls{Software}.
 		\begin{enumerate}
-			\item Esta digirido al desarrollo de varios tipos de \gls{Software}.
-			\item Se alinea facilmente con las fases del \gls{CVDS}.
-			\item Se alinea con otros metodos de ingeniería de \gls{Software} que consideran una etapa especifica para la administración de requisitos.\\
+			\item Esta dirigido al desarrollo de varios tipos de \gls{Software}.
+			\item Se alinea fácilmente con las fases del \gls{CVDS}.
+			\item Se alinea con otros métodos de ingeniería de \gls{Software} que consideran una etapa especifica para la administración de requisitos.\\
 			
 		\end{enumerate}
 	\item Cualidades relacionadas a la Seguridad Informática.
@@ -1394,13 +1402,13 @@ Las cualidades que \gls{CoSMo} posee considerando los puntos propuestos por Ikra
 \end{enumerate}
 
 \subsubsection{¿Cuáles son las deficiencias que presenta el \gls{CoSMo}?}
-Las deficiencias que \gls{CoSMo} posee considerando los puntos propuestos por Ikram El rhaffari y Ounsa Roudies en su estudio y el cual esta enfocado en el análisis de elementos pertenecientes a la Ingeniería de \gls{Software}, a la \gls{SI} y a las \gls{TI} y son listadas a continuación \cite{BenchmarkingSDLCLAPS}.
+Las deficiencias que \gls{CoSMo} posee considerando los puntos propuestos por \cite{BenchmarkingSDLCLAPS} en su estudio y el cual esta enfocado en el análisis de elementos pertenecientes a la Ingeniería de \gls{Software}, a la \gls{SI} y a las \gls{TI} y son listadas a continuación.
 
 \begin{enumerate}
 	\item Deficiencias relacionadas a la Ingeniería de \gls{Software}.
 		\begin{enumerate}
 			\item Muy pocos recursos disponibles. 
-			\item No existe una guía para su resalización, la información existente solo acopla los requisitos propuestos y los mecanismos usados para alcanzarlos asi como algunos casos practicos.\\
+			\item No existe una guía para su realización, la información existente solo acopla los requisitos propuestos y los mecanismos usados para alcanzarlos así como algunos casos prácticos.\\
 			
 		\end{enumerate}
 	\item Deficiencias relacionadas a la Seguridad Informática.
@@ -1411,33 +1419,63 @@ Las deficiencias que \gls{CoSMo} posee considerando los puntos propuestos por Ik
 		\end{enumerate}
 	\item Deficiencias relacionadas con \gls{TI}.
 		\begin{enumerate}
-			\item No existe información sobre su enfoque en la calidad, aunque puede ser combinado con algun metodo para el aseguramiento de la calidad
+			\item No existe información sobre su enfoque en la calidad, aunque puede ser combinado con algun  para el aseguramiento de la calidad
 			\item La documentación existente es muy limitada.
-			\item Está digido solo a equipos de desarrollo.
+			\item Está dirigido solo a equipos de desarrollo.
 			\item No posee niveles de madurez.
-			\item No posee técnias para el aseguramiento de la calidad.
-			
+			\item No posee técnicas para el aseguramiento de la calidad.
 		\end{enumerate}
+		
 \end{enumerate}
 
 
-\subsection{Desarrollo de Sistemas Seguros con Lenguaje Unificado de Modelado}
-En \cite{OMGAbout} se menciona que Unified Modeling Language (UML, Lenguaje Unificado de Modelado) ha sido creado por el \gls{OMG} un consorcio de estándares de tecnología, sin fines de lucro,  abierto e internacional, fundado en 1989. Los estándares \gls{OMG} son impulsados por proveedores, usuarios finales, instituciones académicas y agencias gubernamentales. Los grupos de trabajo de \gls{OMG} desarrollan normas de integración empresarial para una amplia gama de tecnologías y una gama más amplia de industrias. Los estándares de modelado de \gls{OMG}, incluyendo \gls{UML} y \gls{MDA} premiten un diseño visual del diseño, ejecución y mantenimiento de software y otros procesos.
+\subsection{Desarrollo de Sistemas Seguros con Lenguaje Unificado de Modelado (\gls{UMLsec})}
+En \cite{OMGAbout} se menciona que Unified Modeling Language (UML, Lenguaje Unificado de Modelado) ha sido creado por el \gls{OMG} un consorcio de estándares de tecnología, sin fines de lucro,  abierto e internacional, fundado en 1989. Los estándares \gls{OMG} son impulsados por proveedores, usuarios finales, instituciones académicas y agencias gubernamentales. Los grupos de trabajo de \gls{OMG} desarrollan normas de integración empresarial para una amplia gama de tecnologías y una gama más amplia de industrias. Los estándares de modelado de \gls{OMG}, incluyendo \gls{UML} y \gls{MDA} permiten el modelado visual del diseño, ejecución y mantenimiento de software entre otros procesos. \gls{UML} posee un extension especializada en el desarrollo de \gls{Software} seguro llamada \gls{UMLsec}.
 
-\subsubsection{¿Qué es el Lenguaje Unificado de Modelado Afín a la seguridad?}
-\gls{UML} \cite{SSDUML}.
+\subsubsection{¿Qué es \gls{UMLsec}?}
+En \cite{UMLsecExtending} se menciona que \gls{UMLsec} (Lenguaje Unificado de Modelado Afín a la Seguridad)  es una extensión de \gls{UML} que permite expresar la información relevante para la seguridad dentro de los diagramas de especificación de un sistema. \gls{UMLsec} se define como un perfil \gls{UML} que utiliza mecanismos de extensión estándar. En particular, las restricciones asociadas proveen criterios para evaluar los aspectos de seguridad del diseño del sistema, haciendo referencia a una semántica formal de un fragmento simplificado de \gls{UML}. \cite{SSDUML} menciona que \gls{UMLsec} permite expresar la información relacionada con la seguridad dentro de los diagramas \gls{UML} de un sistema. Para formular requisitos y suposiciones de seguridad en el ambiente del sistema es necesario el uso de estereotipos y etiquetas así como restricciones que determinan cuando es que los requisitos son alcanzados por el diseño del sistema, al referirse a la semántica de ejecución. Los requisitos pueden ser comprobados por medio de las herramientas propuestas en el capitulo 6 de \cite{SSDUML} ademas de ello se muestra la utilidad de la extensión para el establecimiento de reglas de diseño seguro de sistemas y se indica con un ejemplo como usar \gls{UMLsec} para aplicar el uso de patrones seguros.\\
 
-\subsubsection{¿Porqué adoptar el Lenguaje Unificado de Modelado Afín a la seguridad?}
+En \cite{SSDUML} son formuladas las propiedades necesarias para el desarrollo de sistemas seguros de la extension \gls{UML} y por medio del formato propuesto por \gls{OMG} denominado \gls{RFPs} son distinguidos los requisitos obligatorios y los opcionales que a continuación son mencionados:
 
-\subsubsection{¿Cómo adoptar el Lenguaje Unificado de Modelado Afín a la seguridad?}
+\begin{enumerate}
+	\item Requisitos obligatorios.\\
+		\begin{enumerate}
+			\item Requisitos de seguridad: es necesario formular requisitos básicos de seguridad tales como, intimidad, integridad y autenticidad de los datos de manera precisa.\\
+			\item Escenarios de amenaza: es necesario considerar varias situaciones y posibles ataques.\\
+			\item Conceptos de seguridad: es necesario emplear conceptos importantes de seguridad como \gls{Tamper-Resistant-Hardware}.\\
+			\item Mecanismos de seguridad: es necesario incorporar mecanismos de seguridad tales como control de acceso y protocolos de seguridad.\\
+			\item Primitivas de seguridad: en nivel detallado es necesario modelar primitivas de seguridad tales como el cifrado simétrico y asimétrico. \\
+			\item Seguridad física subyacente: es necesario tener en cuenta el nivel de seguridad que provee la capa de seguridad subyacente.\\
+			\item Administración de la seguridad: es necesario monitorear cuestiones tales como el flujo de trabajo etc.\\ 
+		\end{enumerate}
+		
+	\item Requisitos opcionales.\\
+		\begin{enumerate}
+			\item Conocimineto sobre seguridad: seria usable poseer conocimientos específicos sobre Java, \gls{Smart Cards}, \gls{CORBA}, etc.
+		\end{enumerate}			
+	
+\end{enumerate}
 
-\subsubsection{¿Cómo evaluar el impacto del Lenguaje Unificado de Modelado Afín a la seguridad?}
+Afín de mantener este texto conciso e ilustrar la idea principal de \gls{UMLsec} es necesario describir un fragmento del perfil tal y como lo realiza \cite{UMLsecExtending} en sus estudios y el cual a continuación es presentado:
 
-\subsubsection{¿Quiénes deben poner en practica el Lenguaje Unificado de Modelado Afín a la seguridad?}
+\begin{enumerate}
+	\item Subconjunto aplicable: el perfil concierne \gls{UML} en su totalidad.\\
+	\item Estereotipos, etiquetas y restricciones: en la figura \#1 son presentados algunos estereotipos de \gls{UMLsec} en conjunto con sus etiquetas y restricciones. Los estereotipos no pertenecen a categorías superiores. Las restricciones que se encuentran en la figura \#1 son nombradas a manera de resumen y son formuladas y explicadas en en resto de la sección. En la figura \#2 son presentadas la etiquetas correspondientes. Algunos de los estereotipos presentados en los sub-sistemas son referidos a los estereotipos contenidos en el modelos de elementos del los propios sub-sistemas, por ejemplo la restricción del estereotipo "Seguridad de datos" contiene los objetos estereotipados como "Criticos" el cual a su vez tiene etiquetas de tipo "Secreto".\\
+	\item Perfiles pre-requisito: \gls{UMLsec} no requiere perfiles pre-requisito.
+\end{enumerate}
 
-\subsubsection{¿Cuáles son los beneficios que ofrece el Lenguaje Unificado de Modelado Afín a la seguridad?}
 
-\subsubsection{¿Cuáles son las deficiencias que presenta el Lenguaje Unificado de Modelado Afín a la seguridad?}
+\subsubsection{¿Porqué adoptar \gls{UMLsec}?}
+
+\subsubsection{¿Cómo adoptar \gls{UMLsec}?}
+
+\subsubsection{¿Cómo evaluar \gls{UMLsec}?}
+
+\subsubsection{¿Quiénes deben poner en practica \gls{UMLsec}?}
+
+\subsubsection{¿Cuáles son los beneficios que ofrece \gls{UMLsec}?}
+
+\subsubsection{¿Cuáles son las deficiencias que presenta \gls{UMLsec}?}
 
 
 \subsection{Casos de Uso Incorrecto}
