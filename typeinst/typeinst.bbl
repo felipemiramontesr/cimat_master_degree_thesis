@@ -101,4 +101,8 @@ J.~Jürjens, {\em Secure Systems Development with UML}.
   Universität München, Boltzmannstr. 3, 85748 München/Garching: Springer,
   1st~ed., 2004.
 
+\bibitem{UsingUMLsec}
+J.~Jürjens, ``Using umlsec and goal trees for secure systems development,''
+  2002.
+
 \end{thebibliography}

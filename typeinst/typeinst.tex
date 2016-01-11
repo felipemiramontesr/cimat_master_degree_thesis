@@ -1,5 +1,8 @@
             
 \documentclass[runningheads,a4paper]{llncs}
+\def\spanishoptions{mexico}
+\usepackage[spanish]{babel}
+
 \usepackage{amssymb}
 \setcounter{tocdepth}{3}
 \usepackage{graphicx}
@@ -8,9 +11,25 @@
 \usepackage{listings}
 \usepackage[acronyms]{glossaries}
 \setacronymstyle{long-short}
+
 \makenoidxglossaries
 
+
+
 %Terminos de glosario
+\newglossaryentry{Swim Lanes}{name={Swim Lanes},
+description={es un elemento visual utilizado en los diagramas de flujo de procesos, o diagramas de flujo, que distingue visualmente reparto del trabajo y de las responsabilidades de los sub-procesos de un proceso de negocio}}
+
+\newglossaryentry{Visa Internacional}{name={Visa Internacional},
+description={es una corporación de servicios financieros multinacional estadounidense con sede en Foster City, California, Estados Unidos. Facilita las transferencias electrónicas de fondos en todo el mundo, más comúnmente a través de tarjetas de crédito de marca Visa y tarjetas de débito.  Visa proporciona a las instituciones financieras con productos de pago de marca Visa que luego utilizan para ofrecer crédito, débito, pre-pago y programas de acceso a dinero en efectivo}}
+
+\newglossaryentry{Ministerio Aleman de Economia}{name={Ministerio Alemán de Economía},
+description={es un departamento ministerial de la República Federal de Alemania. Anteriormente se la conocía como el "Ministerio de Economía". Se volvió a crear en 2005 como "Ministerio de Economía y Tecnología", después de que previamente se había fusionado con otros ministerios para formar el Ministerio Federal de Economía y Trabajo entre 2002 y 2005}}
+
+\newglossaryentry{Banco Aleman}{name={Banco Alemán},
+description={en alemán y oficialmente: Deutsche Bundesbank o simplemente Bundesbank, es el banco central de Alemania, creado en 1957 para servir como banco central de la República Federal de Alemania.}}
+
+
 \newglossaryentry{Smart Cards}{name={Smart Cards},
 description={es una tarjeta pequeña con circuitos integrados embebidos, están hechas generalmente de cloruro de polivinilo de plástico, pero a veces de poliésteres basados en tereftalato de polietileno, estireno acrilonitrilo butadieno o policarbonato, pueden proporcionar identificación personal, autenticación, almacenamiento de datos y procesamiento de solicitudes así como proporcionar autenticación de seguridad para el inicio de sesión único (SSO) dentro de las grandes organizaciones}}
 
@@ -88,7 +107,7 @@ description={es un sistema operativo portable, multitarea y multiusuario desarro
 \newglossaryentry{Flexible}{name={Flexible},
 description={es la capacidad de hacer cambios en el producto que se está desarrollando, o en la forma en que se desarrolla, hasta relativamente tarde en el desarrollo, sin ser demasiado perturbador. En consecuencia, la posterior puede hacer cambios, entre más flexible es el proceso menos perjudicial es}}
 
-\newglossaryentry{Tamper-Resistant-Hardware}{name={Tamper-Resistant-Hardware},
+\newglossaryentry{Tamper-Resistant-Hardware}{name={Tamper Resistant Hardware},
 description={son dispositivos resistentes a las manipulaciones  y no permiten ciertas ser extraídos fuera del hardware. Esto puede proporcionar una garantía muy fuerte ya que no pueden ser objeto de abuso: la única manera para manipularlos es poseer físicamente el dispositivo en particular}}
 
 %Fin de glosario
@@ -150,6 +169,9 @@ description={son dispositivos resistentes a las manipulaciones  y no permiten ci
 \newacronym{MDA}{MDA}{Model Driven Architecture}
 \newacronym{RFPs}{RFPs}{Requests of Proposals}
 \newacronym{CORBA}{CORBA}{Common Object Request Broker Architecture}
+\newacronym{HBCI}{HBCI}{Homebancking Computer Interface}
+\newacronym{CEPS}{CEPS}{Common Electronic Purse Specifications}
+
 
 
 
@@ -1429,7 +1451,7 @@ Las deficiencias que \gls{CoSMo} posee considerando los puntos propuestos por \c
 \end{enumerate}
 
 
-\subsection{Desarrollo de Sistemas Seguros con Lenguaje Unificado de Modelado (\gls{UMLsec})}
+\subsection{Ingeniería en Seguridad Basada en Modelos con \gls{UML} y (\gls{UMLsec})}
 En \cite{OMGAbout} se menciona que Unified Modeling Language (UML, Lenguaje Unificado de Modelado) ha sido creado por el \gls{OMG} un consorcio de estándares de tecnología, sin fines de lucro,  abierto e internacional, fundado en 1989. Los estándares \gls{OMG} son impulsados por proveedores, usuarios finales, instituciones académicas y agencias gubernamentales. Los grupos de trabajo de \gls{OMG} desarrollan normas de integración empresarial para una amplia gama de tecnologías y una gama más amplia de industrias. Los estándares de modelado de \gls{OMG}, incluyendo \gls{UML} y \gls{MDA} permiten el modelado visual del diseño, ejecución y mantenimiento de software entre otros procesos. \gls{UML} posee un extension especializada en el desarrollo de \gls{Software} seguro llamada \gls{UMLsec}.
 
 \subsubsection{¿Qué es \gls{UMLsec}?}
@@ -1464,19 +1486,142 @@ Afín de mantener este texto conciso e ilustrar la idea principal de \gls{UMLsec
 	\item Perfiles pre-requisito: \gls{UMLsec} no requiere perfiles pre-requisito.
 \end{enumerate}
 
-
 \subsubsection{¿Porqué adoptar \gls{UMLsec}?}
+En \cite{UMLsecExtending} se menciona que; la mayoría de los problemas críticos de seguridad se deben al hecho de que los desarrolladores de \gls{Software} no poseen un conocimiento base sobre la seguridad informática, debido a esto es necesario que cualquier organización que este relacionada con el desarrollo de productos de \gls{Software} tenga las bases necesarias para garantizar un nivel optimo de seguridad por medio de los elementos propuestos por \gls{UML} en su extensión \gls{UMLsec}.\\
 
 \subsubsection{¿Cómo adoptar \gls{UMLsec}?}
+En \cite{UsingUMLsec} se menciona que; para lograr la correcta adopción de \gls{UMLsec} es necesario un buen diseño, el cual considera los siguientes puntos:
+
+\begin{enumerate}
+	\item Encapsular el diseño para facilitar el re-uso de componentes.\\
+	\item Usar alguna herramientas propuesta por \gls{UML} para la evaluación del diseño del sistema.\\
+	\item Aprender los mecanismos de \gls{UMLsec}.\\
+	\item Combinar un enfoque dirigido por casos de uso para asegurar los requisitos funcionales y un enfoque dirigido a metas para el aseguramiento de los requisitos de seguridad.\\
+\end{enumerate}
+
+\cite{UsingUMLsec} dice; \gls{UMLsec} consiste en diferentes tipos de diagramas que describen diferentes vistas del sistema, dichos diagramas son:
+
+\begin{enumerate}
+	\item Diagrama de casos de uso
+	\item Diagramas de actividades
+	\item Diagramas de clases
+	\item Diagramas de secuencia
+	\item Diagramas de estados
+	\item Diagramas de despliegue o lanzamiento\\
+\end{enumerate}
+
+\gls{UML} ofrece propone mecanismos de extension en forma de etiquetas. Dichos mecanismos pueden ser llamados estereotipos \{etiqueta = valor\} y pueden ser representados de la de la siguiente manera: \[ \langle \langle estereotipo \rangle \rangle\]
+
+Según \cite{UsingUMLsec} por medio del uso de perfiles es posible dar significado a los diferentes elementos del modelo marcados con etiquetas. Específicamente se pretende desarrollar un árbol de metas de seguridad a lo largo del desarrollo de la especificación del \gls{Software}. Las metas de seguridad deben ser refinadas en paralelo mientras se obtienen mas detalles en las fases subsecuentes al diseño.\\
+
+A continuación es mostrado el ejemplo utilizado por \cite{UsingUMLsec} para describir la adopción de la técnica. Se ha considerado una aplicación basada en Internet.\\
+
+\begin{enumerate}
+	\item Requisitos\\ 
+
+En esta etapa es obligatorio el uso de Casos de Uso para describir la situación que debe ser alcanzada a la par de la meta propuesta (véase figura x1).\\
+
+A continuación se presenta el estereotipo Intercambio-Justo y las acciones formuladas para lograr su cometido. 
+
+	 \[ \langle \langle Intercambio-Justo \rangle \rangle\] \begin{center}
+
+	\end{center} \[ \langle \langle Buena-Compra \rangle \rangle\] \begin{center}
+
+	\end{center} \[ \langle \langle Buena-Venta \rangle \rangle\]\\
+	
+	Las actividades formuladas están ligadas en ejecución dependiente (no es posible ejecutar una sin la otra). La letra (U) en el árbol de metas significa Indeterminado es decir aun no ha sido Satisfecho (S) o denegado (D).\\
+	
+	\item Análisis  \\
+	
+En esta etapa  deben ser utilizados Diagramas de Actividades para explicar los Casos de Uso y el árbol de metas en mayor detalle. Los Diagramas de Actividades deben estar separados por \gls{Swim Lanes} que describirán las actividades de diferentes partes del sistema (Cliente y Negocio). Dos pares de valores  Etiqueta-Valor, ( \{ Inicio = Pago \} y \{ Alto = Final\} ) son utilizados para marcar algunas acciones. Ahora los diagramas se ajustan al requisito de seguridad Intercambio-Justo representado en la imagen x1.\\ 
+
+	\item Diseño \\
+	
+		\begin{enumerate}
+			\item Diagramas de clases\\
+
+Siguiendo el ejemplo la figura x3 proporciona la descripción Clase-Nivel (tal y como se realiza en Intercambio-Justo) de un generador de llaves. El generador de llaves provee un método llamado nuevaLlave(), el cual regresa una llave cifrada que garantiza la confidencialidad y integridad. Ademas provee un método llamada aleatorio() el cual regresa un valor aleatorio que es requerido para enriquecer la integridad y confidencialidad (tal y como es especificado en el elemento de modelo estereotipado como Acciones-Salientes agregado en \gls{UMLsec}). Dicho requisito no es cubierto por el generador aleatorio. En el ejemplo se ha considerado el uso de las especificaciones de un \gls{HBCI}, en versiones tempranas requiere la generación de llaves sin la especificación de requisitos de seguridad para los generadores de números aleatorios usados. Omisiones de este tipo pueden esr detectadas usando el enfoque del modelo \gls{UMLsec}.\\
+
+			\item Diagramas de secuencia\\
+
+En un enfoque \gls{UML} los protocolos de seguridad pueden ser especificados por medio de gráficas de secuencia de mensajes. Según el ejemplo es posible asumir que el pago es realizado por medio del protocolo de compras de \gls{CEPS}. Una especificación abstracta es presentado en la figura x4, en ella dos objetos en el sistema intercambian mensajes que incluyen operaciones criptográficas tales como cifrado de llave publica.\\ 
+			
+			\item Diagramas de estado\\
+
+Los diagramas de estado representan el comportamiento dinámico de un objeto individual: los eventos pueden causar cambios en el estado y en las acciones.	En la figura x5 el diagrama de estado consiste en estados (escritos en cajas) y transiciones.  El estado inicial es marcado con una transición que lleva fuera del proceso. Las transacciones entre estados pueden ser etiquetadas como: eventos, condiciones y acciones.\\ 
+
+			\item Diagrama de paquetes\\
+
+Los diagramas de paquetes pueden ser utilizados para agrupar partes del sistema en unidades de alto nivel. Estos diagramas juegan un rol relevante para la seguridad pues estos pueden especificar la visibilidad de objetos dentro de un paquete. En la Figura x6 el paquete 1 contiene la clase Cls1 con visibilidad publica, el paquete 2 contiene la clase Cls2a con visibilidad publica y la clase Cls2b como privada. La clase Cls2b no puede tener acceso a la clase Cls1 aun a través del paquete 1.\\
+
+		\end{enumerate}
+
+	\item Implementación \\
+
+Los diagramas de lanzamiento describen la capa física subyacente y son usados para asegurar que los requisitos de seguridad en la comunicación sean alcanzados por la capa física. La figura x7 describe la situacion fisica de un sistema que incluye un sistema cliente y un servidor web que se comunican sobre Internet. La especificación del sistema requiere el intercambio de datos para garantizar la confidencialidad y la integridad sin embargo no son alcanzados pues esto puede ser tratado usando mecanismos de cifrado.
+\end{enumerate}
+
 
 \subsubsection{¿Cómo evaluar \gls{UMLsec}?}
 
 \subsubsection{¿Quiénes deben poner en practica \gls{UMLsec}?}
+En \cite{UMLsecExtending} se dice que las sociedades modernas así como sus economías confían en las infraestructuras actuales de comunicación, finanzas, distribución energética y transporte. Dichas economías dependen cada vez mas en los sistemas de información en red. Los ataques en contra estos sistemas son amenazas constantes y pueden afectar de manera considerable el aspecto económico o incluso el aspecto físico de las personas y las organizaciones. Según \cite{UMLsecExtending} la mayoría de los problemas críticos de seguridad se deben al bajo conocimiento sobre la seguridad informática que los desarrolladores poseen, debido a esto es necesario que cualquier organización que este relacionada con el desarrollo de productos de \gls{Software} tenga las bases necesarias para garantizar un nivel optimo de seguridad por medio de los elementos propuestos por \gls{UML} en su extensión \gls{UMLsec}.\\
+
+\cite{UMLsecExtending} menciona que el método propuesto ha sido integrado con éxito en proyectos realizados por \gls{Visa Internacional}, \gls{Ministerio Aleman de Economia} y el \gls{Banco Aleman}.
 
 \subsubsection{¿Cuáles son los beneficios que ofrece \gls{UMLsec}?}
+Los beneficios que \gls{UMLsec} posee considerando los puntos propuestos por \cite{BenchmarkingSDLCLAPS} en su estudio y el cual esta enfocado en el análisis de elementos pertenecientes a la Ingeniería de \gls{Software}, a la \gls{SI} y a las \gls{TI} y son listadas a continuación.
+
+\begin{enumerate}
+	\item Cualidades relacionadas a la Ingeniería de \gls{Software}.
+		\begin{enumerate}
+			\item Esta dirigido al desarrollo de varios tipos de \gls{Software}.
+			\item Se alinea fácilmente con las fases del \gls{CVDS}.
+			\item Existe una amplia gama de recursos disponibles (informativos y descriptivos).
+			\item Se alinea con otros métodos de ingeniería de \gls{Software} que consideran una etapa especifica para el diseño seguro.
+			\item Existen guías de actividades, de casos y ejemplos prácticos.\\
+			
+		\end{enumerate}
+	\item Cualidades relacionadas a la Seguridad Informática.
+		\begin{enumerate}
+			\item Posee un completo enfoque en la seguridad.
+			\item Se considera el uso de equipos de seguridad.
+			\item Considera la conciencia en la seguridad como requisito preliminar.
+			\item Provee de tecnicas para el aseguramiento de la privacidad pues es el cometido principal de la técnica.
+			\item Es posible evaluar los requisitos de seguridad alcanzados y no alcanzados con el fin de obtener algunas métricas.\\
+
+		\end{enumerate}
+	\item Cualidades relacionadas con \gls{TI}.
+		\begin{enumerate} 
+			\item Existe documentación disponible sobre el uso de los principales componentes (diagramas UML) y guías ejemplificadas de \gls{UMLsec}.
+			\item El método promueve el re-uso de requisitos de esta manera garantiza su evolución y completud.
+			\item La técnica esta dirigida a cualquier tipo de organización que desee desarrollar \gls{Software} seguro.\\
+		\end{enumerate}
+\end{enumerate}
+
 
 \subsubsection{¿Cuáles son las deficiencias que presenta \gls{UMLsec}?}
+Las deficiencias que \gls{UMLsec} posee considerando los puntos propuestos por \cite{BenchmarkingSDLCLAPS} en su estudio y el cual esta enfocado en el análisis de elementos pertenecientes a la Ingeniería de \gls{Software}, a la \gls{SI} y a las \gls{TI} y son listadas a continuación.
 
+\begin{enumerate}
+	\item Deficiencias relacionadas a la Ingeniería de \gls{Software}.
+		\begin{enumerate}
+			\item No es flexible.\\
+			
+		\end{enumerate}
+	\item Deficiencias relacionadas a la Seguridad Informática y Auditoria.\\
+	
+Considerando los puntos abordados por \cite{BenchmarkingSDLCLAPS} para desarrollar su estudio, no se presentan deficiencias en el área. \\
+						
+	\item Deficiencias relacionadas con \gls{TI}.
+		\begin{enumerate}
+			\item No existe información sobre su enfoque en la calidad, aunque puede ser combinado con algún método para el aseguramiento de la calidad
+			\item Está dirigido solo a equipos de desarrollo.
+			\item No posee niveles de madurez.
+			\item No posee técnicas para el aseguramiento de la calidad.
+		\end{enumerate}
+		
+\end{enumerate}
 
 \subsection{Casos de Uso Incorrecto}
 
