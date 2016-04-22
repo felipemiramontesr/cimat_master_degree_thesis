@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Antecedentes_incremental.aux
+The style file: ieeetr.bst
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 7 of file bibliography.bib
+ :  address   = "
+ :               Chicago, Illinois"
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 29 of file bibliography.bib
+ :  address   = "
+ :               140 Kendrick Street, Needham, MA 02494, U.S.A",
+I'm skipping whatever remains of this entry
+Warning--empty journal in GCSI_1
+Warning--empty journal in WSIS_1
+Warning--empty journal in GCA_1
+Warning--empty journal in EDN_1
+You've used 4 entries,
+            1876 wiz_defined-function locations,
+            501 strings with 3842 characters,
+and the built_in function-call counts, 530 in all, are:
+= -- 40
+> -- 16
+< -- 0
++ -- 8
+- -- 4
+* -- 38
+:= -- 95
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 32
+empty$ -- 61
+format.name$ -- 4
+if$ -- 113
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 15
+num.names$ -- 4
+pop$ -- 20
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 8
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 4
+width$ -- 5
+write$ -- 30
+(There were 2 error messages)

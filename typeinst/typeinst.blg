@@ -8,23 +8,25 @@ I was expecting a `,' or a `}'---line 21 of file bibliography.bib
  :               140 Kendrick Street, Needham, MA 02494, U.S.A",
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring CLASPIntroduction's extra "title" field
---line 126 of file bibliography.bib
+--line 141 of file bibliography.bib
 Warning--I'm ignoring CLASPConcepts's extra "title" field
---line 134 of file bibliography.bib
+--line 149 of file bibliography.bib
 Warning--I'm ignoring SAMMIntroduction's extra "title" field
---line 150 of file bibliography.bib
+--line 165 of file bibliography.bib
 Warning--I'm ignoring OWASPIntroduction's extra "title" field
---line 158 of file bibliography.bib
+--line 173 of file bibliography.bib
 Warning--I'm ignoring CbyCIntroduction's extra "title" field
---line 166 of file bibliography.bib
+--line 181 of file bibliography.bib
 Warning--I'm ignoring CbyCHighIntegritySystems's extra "title" field
---line 174 of file bibliography.bib
+--line 189 of file bibliography.bib
 Warning--I'm ignoring CbyCPraxis's extra "title" field
---line 182 of file bibliography.bib
+--line 197 of file bibliography.bib
 Warning--I'm ignoring CCStat's extra "title" field
---line 190 of file bibliography.bib
+--line 205 of file bibliography.bib
 Warning--I'm ignoring OMGAbout's extra "title" field
---line 198 of file bibliography.bib
+--line 213 of file bibliography.bib
+Warning--I'm ignoring BSIMM_c's extra "title" field
+--line 222 of file bibliography.bib
 Warning--empty journal in SDLWhitePaper
 Warning--empty journal in SDLImplementacionSimplificada
 Warning--empty journal in webAplicationSecurity
@@ -44,36 +46,38 @@ while executing---line 969 of file ieeetr.bst
 Warning--empty journal in CoSMoIntroduction
 Warning--empty journal in UMLsecExtending
 Warning--empty journal in UsingUMLsec
-You've used 25 entries,
+Warning--empty journal in BSIMM_a
+Warning--empty journal in BSIMM_b
+You've used 28 entries,
             1876 wiz_defined-function locations,
-            611 strings with 6855 characters,
-and the built_in function-call counts, 3291 in all, are:
-= -- 282
-> -- 100
+            625 strings with 7178 characters,
+and the built_in function-call counts, 3713 in all, are:
+= -- 317
+> -- 120
 < -- 0
-+ -- 50
-- -- 25
-* -- 167
-:= -- 521
-add.period$ -- 35
-call.type$ -- 25
-change.case$ -- 25
++ -- 58
+- -- 30
+* -- 193
+:= -- 588
+add.period$ -- 39
+call.type$ -- 28
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 172
-empty$ -- 422
-format.name$ -- 25
-if$ -- 780
+cite$ -- 45
+duplicate$ -- 192
+empty$ -- 470
+format.name$ -- 30
+if$ -- 878
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 17
-newline$ -- 88
-num.names$ -- 25
-pop$ -- 150
+int.to.str$ -- 28
+missing$ -- 19
+newline$ -- 98
+num.names$ -- 28
+pop$ -- 167
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 50
+skip$ -- 59
 stack$ -- 0
 substring$ -- 0
 swap$ -- 1
@@ -81,8 +85,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 15
-while$ -- 25
-width$ -- 27
-write$ -- 198
+warning$ -- 17
+while$ -- 28
+width$ -- 30
+write$ -- 221
 (There were 3 error messages)

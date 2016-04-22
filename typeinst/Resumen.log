@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.10)  8 MAR 2016 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.10)  9 MAR 2016 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**typeinst.tex
-(./typeinst.tex
+**Resumen.tex
+(./Resumen.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 7 languages loaded.
 (./llncs.cls
@@ -674,26 +674,26 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 Package: glossary-tree 2014/08/27 v4.10 (NLCT)
 \glstreeindent=\skip60
 ))
-(./typeinst.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+(./Resumen.aux
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 )
-\openout1 = `typeinst.aux'.
+\openout1 = `Resumen.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count168
@@ -760,33 +760,17 @@ e
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/dict/glossaries-dictionary-
 English.dict
 Dictionary: glossaries-dictionary, Language: English 
-) (./typeinst.glsdefs)
-LaTeX Font Info:    Try loading font information for U+msa on input line 197.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 197.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
@@ -794,97 +778,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--238
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
-[2]
-LaTeX Info: Redefining \. on input line 269.
-LaTeX Info: Redefining \% on input line 269.
- [3] [4
 
-] (./typeinst.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-[]\OT1/cmr/m/n/9 OWASP, ``CLASP con-cepts.'' $\OT1/cmtt/m/n/9 https : / / www .
- owasp . org / index . php / CLASP _
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
-[]\OT1/cmr/m/n/9 OWASP, ``OWASP in-tro-duc-tion.'' $\OT1/cmtt/m/n/9 https : / /
- www . owasp . org / index . php /
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 43--46
-[]\OT1/cmr/m/n/9 P. Amey, ``CbyC cbyc.'' $\OT1/cmtt/m/n/9 https : / / buildsecu
-rityin . us-[]cert . gov / articles /
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls). 
+on input line 67.
+
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+[2] (./Resumen.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+[]\OT1/cmr/m/n/9 Forbes, ``Ci-ber-cri-men en m^^Sexi-co.'' $\OT1/cmtt/m/n/9 htt
+p : / / www . forbes . com . mx /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
-[]\OT1/cmr/m/n/9 Praxis, ``Pra-xis high in-te-grity sys-tems.'' $\OT1/cmtt/m/n/
-9 http : / / web . archive . org / web /
+Underfull \hbox (badness 1484) in paragraph at lines 9--12
+\OT1/cmtt/m/n/9 10-[]datos-[]sobre-[]cibercrimen-[]en-[]mexico-[]que-[]debes-[]
+conocer$\OT1/cmr/m/n/9 .  Fe-cha de ac-
  []
 
+) [3
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
-\OT1/cmtt/m/n/9 20081114100215 / http : / / www . praxis-[]his . com / services
- / software / approach .
- []
-
-
-Underfull \hbox (badness 2460) in paragraph at lines 91--94
-[]\OT1/cmr/m/n/9 O. M. Group, ``OMG about omg.'' $\OT1/cmtt/m/n/9 http : / / ww
-w . omg . org / gettingstarted /
- []
-
-[5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 117--120
-[]\OT1/cmr/m/n/9 BSIMM, ``BSIMM bsimm.'' $\OT1/cmtt/m/n/9 https : / / go . cigi
-tal . com / hubfs / Datasheets /
- []
-
-)
-LaTeX Info: Redefining \. on input line 275.
-LaTeX Info: Redefining \% on input line 275.
- [6] (./typeinst.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+] (./Resumen.aux
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 ) ) 
 Here is how much of TeX's memory you used:
- 11681 strings out of 494917
- 171654 string characters out of 6178371
- 299986 words of memory out of 5000000
- 14699 multiletter control sequences out of 15000+600000
- 10817 words of font info for 42 fonts, out of 8000000 for 9000
+ 9148 strings out of 494917
+ 127454 string characters out of 6178371
+ 255643 words of memory out of 5000000
+ 12169 multiletter control sequences out of 15000+600000
+ 10434 words of font info for 41 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 46i,5n,39p,2226b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,5n,49p,2225b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on typeinst.pdf (6 pages, 109977 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on Resumen.pdf (3 pages, 91689 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

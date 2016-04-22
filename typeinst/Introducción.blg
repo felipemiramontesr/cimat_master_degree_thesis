@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Introducción.aux
+The style file: ieeetr.bst
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 7 of file bibliography.bib
+ :  address   = "
+ :               Chicago, Illinois"
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 29 of file bibliography.bib
+ :  address   = "
+ :               140 Kendrick Street, Needham, MA 02494, U.S.A",
+I'm skipping whatever remains of this entry
+Warning--empty journal in RMT_1
+Warning--empty journal in EDN_1
+Warning--empty journal in TSCALC_1
+Warning--empty journal in GCSI_1
+You've used 8 entries,
+            1876 wiz_defined-function locations,
+            522 strings with 4417 characters,
+and the built_in function-call counts, 1076 in all, are:
+= -- 93
+> -- 36
+< -- 0
++ -- 17
+- -- 9
+* -- 56
+:= -- 174
+add.period$ -- 12
+call.type$ -- 8
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 48
+empty$ -- 133
+format.name$ -- 9
+if$ -- 253
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 4
+newline$ -- 31
+num.names$ -- 8
+pop$ -- 48
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 21
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 8
+width$ -- 9
+write$ -- 66
+(There were 2 error messages)

@@ -1,0 +1,146 @@
+        
+\documentclass[runningheads,a4paper]{llncs}
+\def\spanishoptions{mexico}
+\usepackage[spanish]{babel}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{listings}
+\usepackage[acronyms]{glossaries}
+\setacronymstyle{long-short}
+
+\makenoidxglossaries
+
+%Terminos de glosario
+\newglossaryentry{hacktivismo}{name={hacktivismo},
+description={Es un acrónimo de hacker y activismo, se entiende normalmente "la utilización no-violenta de herramientas digitales ilegales o legalmente ambiguas persiguiendo fines políticos. Estas herramientas incluyen desfiguraciones de webs, redirecciones, ataques de denegación de servicio, robo de información, parodias de sitios web, sustituciones virtuales, sabotajes virtuales y desarrollo de software".}}
+
+\newacronym{NSA}{NSA}{National Security Agency}
+\newacronym{EE.UU}{EE.UU}{Estados Unidos de América}
+\newacronym{CIU}{CIU}{The Competitive Intelligence Unit}
+\newacronym{OEA}{OEA}{Organización de los Estados Americanos}
+\newacronym{PF}{PF}{Policía Federal}
+\newacronym{CMS}{CMS}{Content Management System}
+\newacronym{LMS}{LMS}{Learning Management System}
+\newacronym{LCMS}{LCMS}{Learning Content Management System}
+\newacronym{TIC}{TIC}{Tecnologías de Información y Comunicaciones}
+\newacronym{EDN}{EDN}{Estrategia Digital Nacional}
+\newacronym{RTCE}{RTCE}{Reforma en Materia de Telecomunicaciones y Competencia Económica}
+\newacronym{LTAIP}{LTAIP}{Ley de Transparencia y Acceso a la Información Pública}
+\newacronym{LPD}{LPD}{Ley de Protección de Datos}
+\newacronym{GRM}{GRM}{Gobierno de la República Mexicana}
+\newacronym{PND}{PND}{Plan Nacional de Desarrollo}
+\newacronym{SEN}{SEN}{Sistema Nacional de Educación}
+\newacronym{LFTR}{LFTR}{Ley Federal de Telecomunicaciones y Radiodifusión}
+\newacronym{LSPRM}{LSPRM}{Ley del Sistema Público de Radiodifusión de México}
+\newacronym{TDT}{TDT}{Televisión Digital Terrestre}
+\newacronym{IFT}{IFT}{Instituto Federal de Telecomunicaciones}
+\newacronym{DOF}{DOF}{Diario Oficial de la Federación}
+\newacronym{EUM}{EUM}{Estados Unidos Mexicanos}
+\newacronym{LFPDPPP}{LFPDPPP}{Ley Federal de Protección de Datos Personales en Posesión de los Particulares}
+\newacronym{IMC}{IMC}{Índice Mundial de Ciberseguridad}
+\newacronym{ITU}{ITU}{International Telecomunication Union}
+\newacronym{UIT}{UIT}{Union Internacional de Telecomunicaciones}
+\newacronym{CMSI}{CMSI}{Cumbre Mundial sobre la Sociedad de la Información}
+\newacronym{GCA}{GCA}{Global Cibersecurity Agenda}
+\newacronym{MCA}{MCA}{Análisis Multicriterios}
+\newacronym{CCF}{CCF}{Código Criminal Federal}
+\newacronym{LFEA}{LFEA}{Ley de Firma Electrónica Avanzada}
+\newacronym{CSIRT}{CSIRT}{Computer Security Incident Response Team}
+\newacronym{CERT}{CERT}{Computer Emergency Response Team}
+\newacronym{CIRT}{CIRT}{Computer Incident Response Team}
+
+
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  
+\title{Antecedentes}
+\titlerunning{Antecedentes}
+\author{Ing. Felipe de Jesús Miramontes Romero}
+\institute{Centro de Investigación en Matemáticas A.C.,\\Maestría en Ingeniería de Software,\\
+Avenida Universidad 222, La Loma, 98068, Zacatecas, México.\\felipemiramontesr@gmail.com\\
+\url{http://www.ingsoft.mx}}
+\maketitle
+
+\begin{abstract}
+\keywords{Seguridad cibernetica, Delincuencia informática, México, Técnicas, Estrategias, Planes, Herramientas, Mejora de la Seguridad informática}
+\end{abstract}
+
+En esta sección es posible encontrar la información referente a los estudios y experimentos realizados para dar respuesta a la interrogante; ¿Cuál es el panorama general de la ciberseguridad en México? Para dar respuesta a la anterior cuestión y con el fin de realizar una propuesta en pro de la seguridad informática en el país se ha considerado identificar la información relacionada con las áreas de estudio utilizadas por la \gls{ITU} y ABI Research para la construcción \gls{IMC} \cite{GCSI_1}, cabe mencionar que la información de cada área de estudio sera enriquecida por medio de datos emanados de actividades y experimentos personales desarrollados con el objetivo de proveer un mayor nivel de detalle en el estudio. Ademas de lo mencionado anteriormente también es posible encontrar el planteamiento del problema, los objetivos generales y específicos así como la justificación de la presente propuesta.
+
+\section{Marco teórico}
+
+\subsection{Indice Mundial de Ciberseguridad (IMC)}
+ABI Research \cite{GCSI_1} menciona que las \gls{TIC} son el catalizador que impulsa la evolución de las sociedades modernas pues sustentan el crecimiento social, económico y político de las personas, organizaciones y gobiernos. De igual manera se menciona que la tecnología y la Internet están ingresando de manera sistemática tanto en el ámbito publico como en el privado ya que estas proveen ventajas considerables en productividad, velocidad, reducción de costes y flexibilidad. Se menciona también que la ciberseguridad es de máxima importancia para el sostenimiento de cualquier modelo tecnológicamente aceptable pues los cibercriminales son numerosos, están bien organizados y ademas cuentan con medios de persuasión políticos, terroristas, hacktivistas (ver \gls{hacktivismo}), etc. Para lograr el progreso tecnológico, la ciberseguridad debe formar parte integral de cualquier proceso relacionado con la tecnología, sin embargo sigue sin formar parte fundamental de las estrategias tecnológicas nacionales e industriales, aunque en la actualidad es posible apreciar de manera táctil el avance tecnológico los esfuerzos en materia de seguridad informática siguen siendo eclécticos y dispersos. Se menciona que la solución se encuentra en la inserción de mecanismos de ciberseguridad en todos los estratos sociales, sin embargo a nivel global la diferencias económicas, políticas y de concientización entre Estados nación son una limitante, para remediar dicha situación es necesario realizar una comparativa entre las capacidades de la seguridad de cada país y la publicación de una clasificación efectiva de la situación pues de tal manera es posible revelar la deficiencias existentes y tomar un acicate para que se intensifiquen los esfuerzos en la materia. ABI Research \cite{GCSI_1} manifiesta que solo se puede sopesar el valor real de la capacidad de ciberseguridad de un país, por comparación y que el \gls{IMC} tiene como principal objetivo medir de manera efectiva el nivel de compromiso con la ciberseguridad de cada Estado nación, este se fundamenta en el mandato actual de la \gls{ITU} pues esta es un facilitador de la linea de acción C5 \cite{WSIS_1} de la \gls{CMSI} la cual tiene como propósito crear confianza y seguridad en la utilización de las \gls{TIC} a nivel nacional, regional e internacional. Se menciona también que el Dr. Hamadoun I. Touré Secretario General de \gls{ITU} en 2007, presento la \gls{GCA} como marco de cooperación entre las todas las partes interesadas en la construcción de una sociedad de la información mas segura. De acuerdo a Stein Schjolberg \cite{GCA_1} la \gls{GCA} es un marco de referencia para la cooperación internacional dirigida a la mejora de la confianza y seguridad en una sociedad de la información, se basa en 5 áreas de trabajo: medidas jurídicas, medidas técnicas, medidas de organización, creación de capacidades y cooperación.\\
+
+El modelo estadístico utilizado para la asignación del \gls{IMC} se inspira en el \gls{MCA} así lo menciona ABI Research \cite{GCSI_1}, el \gls{MCA} establece la preferencia entre alternativas por referencia a un grupo explícito de objetivos para los que se han definido criterios de evaluación del grado en el que sean alcanzados dichos objetivos, se aplica un modelo de evaluación lineal aditiva, la matriz de rendimiento describe las alternativas y las columnas el rendimiento de las alternativas en relación a los criterios. La puntuación de la evaluación comparativa se apoya en indicadores ponderados de manera equitativa, se otorgan 0 puntos cuando no existen actividades; 1 cual la medida posee carácter parcial; y 2 puntos para medidas de alto alcance. La puntuación para cada categoría es la siguiente (véase tabla \ref{table:pimc}).  
+
+\begin{table}[ht]
+\caption{Puntuación total atribuida a cada una de las categorías del Indice Mundial de Ciberseguridad (IMC).}
+\begin{center}
+\begin{tabular}{ | l | c |}
+
+ \hline                 
+   \textbf{Área} & \textbf{Puntos} \\ \hline \hline
+   \textbf{Medidas jurídicas} &  \\
+   Legislación penal & 2 \\
+   Reglamentación y conformidad & 2 \\ \hline
+   
+   \textbf{Medidas técnicas} &  \\
+   CERT/CIRT/CSIRT & 2 \\
+   Normal & 2 \\
+   Certificación & 2 \\ \hline
+   
+   \textbf{Medidas organizativas} &  \\
+   Política & 2 \\
+   Hoja de ruta de gobernanza & 2 \\
+   Organismo responsable & 2 \\
+   Evaluación comparativa nacional & 2 \\ \hline
+   
+   \textbf{Creación de capacidades} &  \\
+   Desarrollo de normas & 2 \\
+   Desarrollo laboral & 2 \\
+   Certificación profesional & 2 \\
+   Certificación del organismo & 2 \\ \hline
+   
+   \textbf{Creación de capacidades} &  \\
+   Cooperación interestatal & 2 \\
+   Cooperación entre organismos & 2 \\
+   Asociaciones entre los sectores publico y político & 2 \\
+   Cooperación internacional & 2 \\ \hline
+
+   \textbf{Total} & 34 \\ \hline   
+    
+\hline  
+\end{tabular}
+\end{center}
+\label{table:pimc}
+% is used to refer this table in the text
+\end{table}
+
+\subsection{Medidas Jurídicas}
+De acuerdo con \cite{GCSI_1} la legislación es una medida para la habilitación de un marco para la estandarización de un reglamento común, permite además que un Estado nación establezca los mecanismos de respuesta a las infracciones: mediante la investigación y la persecución de los delitos y la imposición de sanciones por falta de conformidad o incumplimiento de la ley. En ultima instancia su objetivo es armonizar supranacionalmente las practicas y medidas interoperables que facilite la lucha contra la ciberdelincuencia.  El entorno legal puede ser medido a partir de la existencia de varias instituciones y marcos jurídicos, dicho subgrupo consta de propios indicadores de rendimiento; legislación penal y reglamento y conformidad.\\
+
+\subsubsection{Legislación penal}
+La legislación del cibercrimen debe contener las leyes sobre el acceso, la interferencia, la intercepción de sistemas y datos, sin autorización (sin derecho). Estas leyes puedes ser clasificadas por su nivel de completitud; no existente, parcial o de amplio alcance. La legislación parcial contiene textos alusivos a la informática en una ley o código penal, por otra parte la legislación de amplio alcance se refiere a la promulgación puntual que aborda los aspectos específicos del delito informático. De acuerdo con \cite{GCSI_1}    México posee la siguientes leyes de carácter especifico:
+
+\begin{itemize}
+	\item \gls{CCF}
+	\item \gls{LFEA}
+\end{itemize}
+ 
+
+
+
+\printnoidxglossaries     
+\bibliographystyle{ieeetr}
+\bibliography{bibliography}
+
+
+\end{document}

@@ -105,4 +105,17 @@ J.~Jürjens, {\em Secure Systems Development with UML}.
 J.~Jürjens, ``Using umlsec and goal trees for secure systems development,''
   2002.
 
+\bibitem{BSIMM_a}
+P.~S.~M. ary McGraw and J.~West, ``Building security in maturity model
+  bsimm-v,'' Octubre 2013.
+
+\bibitem{BSIMM_b}
+P.~S.~M. ary McGraw and J.~West, ``Building security in maturity model
+  bsimm-vi,'' Octubre 2013.
+
+\bibitem{BSIMM_c}
+BSIMM, ``{BSIMM} bsimm.''
+  \url{https://go.cigital.com/hubfs/Datasheets/building-secuirty-in-maturity-model-BSIMM-cigital.pdf}.
+\newblock Fecha de acceso: 12-1-2016.
+
 \end{thebibliography}

@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Antecedentes.aux
+The style file: ieeetr.bst
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 7 of file bibliography.bib
+ :  address   = "
+ :               Chicago, Illinois"
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 29 of file bibliography.bib
+ :  address   = "
+ :               140 Kendrick Street, Needham, MA 02494, U.S.A",
+I'm skipping whatever remains of this entry
+Warning--empty journal in GCSI_1
+Warning--empty journal in WSIS_1
+Warning--empty journal in GCA_1
+Warning--empty journal in EDN_1
+Warning--empty journal in RMT_1
+Warning--empty journal in LTAIP_1
+Warning--empty journal in LFPDPPP_1
+You've used 7 entries,
+            1876 wiz_defined-function locations,
+            515 strings with 4080 characters,
+and the built_in function-call counts, 911 in all, are:
+= -- 70
+> -- 28
+< -- 0
++ -- 14
+- -- 7
+* -- 65
+:= -- 158
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 56
+empty$ -- 106
+format.name$ -- 7
+if$ -- 197
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 24
+num.names$ -- 7
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 7
+width$ -- 8
+write$ -- 51
+(There were 2 error messages)
